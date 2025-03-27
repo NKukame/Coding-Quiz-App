@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Slabo+13px&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gidole', sans-serif;
+}
+
+
+:root{
+    --peach: #F5EEDC;
+    --dark-blue: #183B4E;
+    --blue: #27548A;
+    --gold: #DDA853;
+}
+
+body{
+    background-color: var(--peach);
+    height: 100vh;
+}
+
+.app-layout {
+    display: flex;
+    flex-direction: row; 
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: var(--dark-blue);
+}
