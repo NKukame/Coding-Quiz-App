@@ -41,6 +41,11 @@ body{
    border-bottom: 5px solid var(--dark-blue);
 }
 
+.main-container a{
+    text-decoration: none;
+    margin: 0;
+}
+
 .main-top-content{
     display: flex;
     gap: 20px;

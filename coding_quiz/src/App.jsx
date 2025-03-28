@@ -1,6 +1,7 @@
+import { Link } from "react-router";
+import "./styles.css";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
-import "./styles.css";
 import bodyLogo from "../src/assets/icons-1294551_1280.png";
 import puzzleLogo from "../src/assets/puzzle.png";
 import collabLogo from "../src/assets/collaboration.png";
@@ -40,14 +41,17 @@ function App() {
                 </p>
               </div>
 
-              <div className="main-top-btn">
-                <a href="#" className="main-top-btn-link">
-                  Start Learning
-                </a>
-                <span className="circle">
-                  <p class="arrow">&rarr;</p>{" "}
-                </span>
-              </div>
+              <Link to="/customization">
+                <div className="main-top-btn">
+                  <a href="#" className="main-top-btn-link">
+                    Start Learning
+                  </a>
+                  <span className="circle">
+                    <p class="arrow">&rarr;</p>{" "}
+                  </span>
+                </div>
+              </Link>
+
             </div>
           </div>
 
@@ -60,6 +64,7 @@ function App() {
 
               <img src={puzzleLogo} alt="Puzzle Logo" />
 
+              
               <div className="bottom-btn">
                 <p className="main-top-btn-link">Start Learning</p>
                 <span className="circle">

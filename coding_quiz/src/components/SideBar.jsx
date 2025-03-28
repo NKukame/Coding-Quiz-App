@@ -23,7 +23,7 @@ function SideBar(){
                     <p>Home</p>
                 </Link>
 
-                <Link to="/" className='sidebar-nav-link'>
+                <Link to="/customization" className='sidebar-nav-link'>
                     <img src={categoryIcon} alt="Quiz Icon" className='sidebar-nav-logo'/>
                     <p>Customization</p>
                 </Link>
