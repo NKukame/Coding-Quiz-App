@@ -25,7 +25,7 @@ function SideBar(){
 
                 <Link to="/" className='sidebar-nav-link'>
                     <img src={categoryIcon} alt="Quiz Icon" className='sidebar-nav-logo'/>
-                    <p>Customisation</p>
+                    <p>Customization</p>
                 </Link>
 
                 <Link to="/" className='sidebar-nav-link'>
