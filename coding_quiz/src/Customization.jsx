@@ -107,7 +107,7 @@ function Customization() {
             </div>
 
             <div className="customization-button">
-              <Link>
+              <Link to="/quiz">
                 <button className="animated-button">
                   <svg
                     viewBox="0 0 24 24"
