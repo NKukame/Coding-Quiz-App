@@ -41,6 +41,11 @@ body{
    border-bottom: 5px solid var(--dark-blue);
 }
 
+.main-container a{
+    text-decoration: none;
+    margin: 0;
+}
+
 .main-top-content{
     display: flex;
     gap: 20px;
@@ -155,71 +160,22 @@ body{
     color: var(--peach);
 }
 
+.rectangle-bottom-content:hover{
+    background-color: var(--dark-blue);
+}
+
 .rectangle-bottom-content h3{
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     text-wrap: wrap;
 }
 
 .rectangle-bottom-content img{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     margin-block: 15px;
 }
 
-
-
-.bottom-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 20%;
-    background-color: var(--gold);
-    border: 2px solid var(--peach);
-    border-radius: 50px;
-    position: relative;
-    cursor: pointer;
-}
-
-.bottom-btn:hover{
-    background-color: var(--dark-blue);
-}
-
-
-.bottom-btn p{
-    text-decoration: none;
-    color: var(--peach);
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.bottom-btn .circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--peach);
-    height: 30px;
-    width: 30px;
-    z-index: 2;
-    position: absolute;
-    transform: translateX(-10%);
-    right: 0;
-    border-radius: 50%;
-}
-
-.bottom-btn:hover .arrow{
-    color: var(--dark-blue);
-    -webkit-text-stroke: 1px var(--dark-blue);
-}
-
-.bottom-btn .arrow {
-    color: var(--gold);
-    font-size: 15px; 
-    animation: moveArrow 1s infinite ease-in-out;
-    padding-bottom: 5px;
-    -webkit-text-stroke: 1px var(--gold);
-}
 
 @keyframes moveArrow {
     0% {
