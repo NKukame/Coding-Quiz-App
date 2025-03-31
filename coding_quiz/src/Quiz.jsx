@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
+import TimeLoader from "./components/TimeLoader";
 import "./styles.css";
 import "./Quiz.css";
 
@@ -13,9 +14,9 @@ function Quiz() {
         <SideBar />
 
         <div className="quiz-container">
-
-        </div>
         
+        </div>
+
       </div>
     </>
   );
