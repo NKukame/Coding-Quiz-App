@@ -65,12 +65,7 @@ function App() {
               <img src={puzzleLogo} alt="Puzzle Logo" />
 
               
-              <div className="bottom-btn">
-                <p className="main-top-btn-link">Start Learning</p>
-                <span className="circle">
-                  <p class="arrow">&rarr;</p>{" "}
-                </span>
-              </div>
+              
             </div>
 
             <div className="rectangle-bottom-content">
@@ -80,12 +75,7 @@ function App() {
 
               <img src={collabLogo} alt="Puzzle Logo" />
 
-              <div className="bottom-btn">
-                <p className="main-top-btn-link">Start Learning</p>
-                <span className="circle">
-                  <p class="arrow">&rarr;</p>{" "}
-                </span>
-              </div>
+              
             </div>
 
             <div className="rectangle-bottom-content">
@@ -95,12 +85,7 @@ function App() {
 
               <img src={puzzleLogoTwo} alt="Puzzle Logo" />
 
-              <div className="bottom-btn">
-                <p className="main-top-btn-link">Start Learning</p>
-                <span className="circle">
-                  <p class="arrow">&rarr;</p>{" "}
-                </span>
-              </div>
+              
             </div>
 
 
