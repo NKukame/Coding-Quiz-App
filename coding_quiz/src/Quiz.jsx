@@ -1,5 +1,6 @@
 import { Link } from "react-router";
-import { useState } from "react";
+import { useLocation, useNavigate } from "react-router";
+import { useState, useEffect } from "react";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import TimeLoader from "./components/TimeLoader";
@@ -8,18 +9,56 @@ import "./styles.css";
 import "./Quiz.css";
 
 function Quiz() {
-  const questions = quizData["React"];
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const { language, numQuestions, timeLimit } = location.state || {};
+
+  const allQuestions = quizData[language] || [];
+  const questions = allQuestions.slice(0, numQuestions || allQuestions.length);
+
+  // const questions = quizData["CSS"];
+  const [score, setScore] = useState(0);
+  const [showResult, setShowResult] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState("");
   const [isAnswered, setIsAnswered] = useState(false);
+  const [secondsRemaining, setSecondsRemaining] = useState(timeLimit * 60); 
+
+  useEffect(() => {
+    if (showResult) return;
+
+    const interval = setInterval(() => {
+      setSecondsRemaining((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          setShowResult(true);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [showResult]);
+
+  const formatTime = () => {
+    const minutes = Math.floor(secondsRemaining / 60);
+    const seconds = secondsRemaining % 60;
+    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  };
+
+  useEffect(() => {
+    
+    if (!language || !numQuestions) {
+      navigate("/");
+    }
+  }, [language, numQuestions, navigate]);
 
   if (!quizData || quizData.length === 0) {
     return <p>Loading questions...</p>;
   }
   const currentQuestion = questions[currentQuestionIndex];
-  
-  // const jsQuestions = quizData["JavaScript"];
-  // const currentQuestion = jsQuestions[currentQuestionIndex];
   
   if (!currentQuestion) {
     return <p>No question found.</p>;
@@ -28,14 +67,25 @@ function Quiz() {
   const handleOptionChange = (option) => {
     setSelectedOption(option);
     setIsAnswered(true);
+
+    if (option === currentQuestion.correctAnswer) {
+      setScore((prev) => prev + 1);
+    }
   };
 
   const handleNext = () => {
-    if (currentQuestionIndex < questions.length - 1) {
+    const isLastQuestion = currentQuestionIndex === questions.length - 1;
+
+    if (!isLastQuestion) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedOption("");
       setIsAnswered(false);
+    } else {
+      // Quiz is finished!
+      setShowResult(true);
     }
+
+    
   };
 
   const handlePrev = () => {
@@ -50,6 +100,7 @@ function Quiz() {
   
 
   const progress = Math.round(((currentQuestionIndex + 1) / quizData.length) * 100);
+
   return (
     <>
       <Header heading="Quiz Page" />
@@ -132,7 +183,7 @@ function Quiz() {
                 <TimeLoader/>
               
               <div className="timer-text">
-                <p>01.30</p>
+                <p>{formatTime()}</p>
               </div>
 
             </div>
@@ -159,6 +210,21 @@ function Quiz() {
 
         </div>
       </div>
+
+      {showResult && (
+          <div className="modal-backdrop">
+            <div className="modal">
+              <h2>Quiz Completed 🎉</h2>
+              <p>
+                You Scored <strong>{score}</strong> Out of{" "}
+                <strong>{questions.length}</strong>
+              </p>
+              <button onClick={() => window.location.reload()} className="restart-quiz">Restart This Quiz</button>
+              <button onClick={() => navigate("/customization")} className="restart-quiz different-option-btn">Different Options</button>
+            </div>
+          </div>
+      )}
+
     </>
   );
 }
