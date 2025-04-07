@@ -120,5 +120,632 @@
             "correctAnswer": "11",
             "explanation": "`x++` increments `x` by 1, so it logs `11`."
         }
+    ],
+
+    "CSS": [
+        {
+            "type": "multiple-choice",
+            "question": "What does CSS stand for?",
+            "options": [
+                "Cascading Style Sheets",
+                "Computer Style Sheets",
+                "Creative Style Sheets",
+                "Colorful Style Sheets"
+            ],
+            "correctAnswer": "Cascading Style Sheets",
+            "explanation": "CSS stands for Cascading Style Sheets, which is used for styling web pages."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which property is used to change the background color in CSS?",
+            "options": [
+                "back-color",
+                "background-color",
+                "color",
+                "background"
+            ],
+            "correctAnswer": "background-color",
+            "explanation": "The `background-color` property is used to set the background color of an element."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which CSS property controls the text size?",
+            "options": [
+                "text-size",
+                "font-size",
+                "text-style",
+                "font-style"
+            ],
+            "correctAnswer": "font-size",
+            "explanation": "The `font-size` property is used to control the size of the text."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you select an element with id 'header' in CSS?",
+            "options": [
+                "#header",
+                ".header",
+                "*header",
+                "@header"
+            ],
+            "correctAnswer": "#header",
+            "explanation": "`#header` is the correct way to select an element with the id 'header'."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which of the following is a valid CSS comment?",
+            "options": [
+                "// This is a comment",
+                "<!-- This is a comment -->",
+                "/** This is a comment **/",
+                "# This is a comment"
+            ],
+            "correctAnswer": "/** This is a comment **/",
+            "explanation": "`/** This is a comment **/` is the correct syntax for a CSS comment."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What does the z-index property do in CSS?",
+            "options": [
+                "Sets the stacking order of elements",
+                "Sets the font size of elements",
+                "Sets the background color of elements",
+                "None of the above"
+            ],
+            "correctAnswer": "Sets the stacking order of elements",
+            "explanation": "`z-index` controls the vertical stacking order of overlapping elements."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which CSS property is used to change the font of an element?",
+            "options": [
+                "font-family",
+                "font-style",
+                "text-font",
+                "font-weight"
+            ],
+            "correctAnswer": "font-family",
+            "explanation": "`font-family` is used to specify the font of an element."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you make a list that lists its items with squares in CSS?",
+            "options": [
+                
+                "list-type: square;",
+                "list-style-type: square;",
+                "list-style: square;",
+                "list-style-type: square-list;"
+            ],
+            "correctAnswer": "list-style-type: square;",
+            "explanation": "`list-style-type: square;` is used to set the list items to squares."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which property is used to change the text color in CSS?",
+            "options": [
+                "text-color",
+                "color",
+                "font-color",
+                "background-color"
+            ],
+            "correctAnswer": "color",
+            "explanation": "`color` is the property used to change the text color of an element."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you center a block element in CSS?",
+            "options": [
+                "margin: auto;",
+                "text-align: center;",
+                "align: center;",
+                "center: block;"
+            ],
+            "correctAnswer": "margin: auto;",
+            "explanation": "`margin: auto;` is used to center a block element horizontally."
+        }
+        
+    ],
+
+    "HTML": [
+        {
+            "type": "multiple-choice",
+            "question": "What does HTML stand for?",
+            "options": [
+                
+                "High Text Markup Language",
+                "Hyperlink and Text Markup Language",
+                "Hyper Text Markup Language",
+                "None of the above"
+            ],
+            "correctAnswer": "Hyper Text Markup Language",
+            "explanation": "HTML stands for Hyper Text Markup Language, which is the standard markup language for creating web pages."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which HTML element is used to define the title of a document?",
+            "options": [
+                "<title>",
+                "<head>",
+                "<meta>",
+                "<h1>"
+            ],
+            "correctAnswer": "<title>",
+            "explanation": "`<title>` is used to define the title of a document, which appears in the browser's title bar."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which HTML element is used to create a hyperlink?",
+            "options": [
+                "<link>",
+                "<a>",
+                "<href>",
+                "<url>"
+            ],
+            "correctAnswer": "<a>",
+            "explanation": "`<a>` is used to create hyperlinks in HTML."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the correct HTML element for inserting a line break?",
+            "options": [
+                "<break>",
+                "<lb>",
+                "<br>",
+                "<linebreak>"
+            ],
+            "correctAnswer": "<br>",
+            "explanation": "`<br>` is the correct element for inserting a line break in HTML."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which attribute is used to specify the URL of an image in HTML?",
+            "options": [
+                "src",
+                "href",
+                "url",
+                "link"
+            ],
+            "correctAnswer": "src",
+            "explanation": "`src` attribute specifies the URL of an image in HTML."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What does the `<ul>` tag represent in HTML?",
+            "options": [
+                
+                "Unordered Link",
+                "Unique List",
+                "Unique Link",
+                "Unordered List"
+            ],
+            "correctAnswer": "Unordered List",
+            "explanation": "`<ul>` tag represents an unordered list in HTML."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which HTML element is used to define an internal style sheet?",
+            "options": [
+                "<style>",
+                "<css>",
+                "<script>",
+                "<link>"
+            ],
+            "correctAnswer": "<style>",
+            "explanation": "`<style>` element is used to define an internal style sheet in HTML."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `<meta>` tag in HTML?",
+            "options": [
+                
+                "To create a link to another document",
+                "To provide metadata about the HTML document",
+                "To define a section in the document",
+                "To create a list"
+            ],
+            "correctAnswer": "To provide metadata about the HTML document",
+            "explanation": "`<meta>` tag provides metadata about the HTML document, such as character set and viewport settings."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which HTML element is used to define a footer for a document or section?",
+            "options": [
+                "<bottom>",
+                "<footer>",
+                "<section>",
+                "<aside>"
+            ],
+            "correctAnswer": "<footer>",
+            "explanation": "`<footer>` element is used to define a footer for a document or section."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How can you make a numbered list in HTML?",
+            "options": [
+                
+                "<ul>",
+                "<list>",
+                "<nl>",
+                "<ol>"
+            ],
+            "correctAnswer": "<ol>",
+            "explanation": "`<ol>` tag is used to create an ordered (numbered) list in HTML."
+        }
+    ],
+
+    "NPM": [
+        {
+            "type": "multiple-choice",
+            "question": "What does NPM stand for?",
+            "options": [
+                "Node Package Manager",
+                "Node Project Manager",
+                "Node Programming Manager",
+                "None of the above"
+            ],
+            "correctAnswer": "Node Package Manager",
+            "explanation": "NPM stands for Node Package Manager, which is a package manager for JavaScript."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you install a package using NPM?",
+            "options": [
+                "npm get <package-name>",
+                "npm install <package-name>",
+                "npm add <package-name>",
+                "npm require <package-name>"
+            ],
+            "correctAnswer": "npm install <package-name>",
+            "explanation": "`npm install <package-name>` is the command used to install a package using NPM."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What command is used to create a new package.json file?",
+            "options": [
+                
+                "npm create",
+                "npm start",
+                "npm new",
+                "npm init"
+            ],
+            "correctAnswer": "npm init",
+            "explanation": "`npm init` is the command used to create a new package.json file."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which command is used to update all packages in NPM?",
+            "options": [
+                
+                "npm upgrade",
+                "npm refresh",
+                "npm update",
+                "npm renew"
+            ],
+            "correctAnswer": "npm update",
+            "explanation": "`npm update` is the command used to update all packages in NPM."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What does the `--save` flag do when installing a package?",
+            "options": [
+                "Saves the package as a dependency in package.json",
+                "Saves the package globally",
+                "Saves the package in a different directory",
+                "None of the above"
+            ],
+            "correctAnswer": "Saves the package as a dependency in package.json",
+            "explanation": "`--save` flag saves the installed package as a dependency in the package.json file."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you uninstall a package using NPM?",
+            "options": [
+                "npm remove <package-name>",
+                "npm delete <package-name>",
+                "npm uninstall <package-name>",
+                "npm clear <package-name>"
+            ],
+            "correctAnswer": "npm uninstall <package-name>",
+            "explanation": "`npm uninstall <package-name>` is the command used to uninstall a package using NPM."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `package-lock.json` file?",
+            "options": [
+                "To lock the versions of installed packages",
+                "To list all available packages",
+                "To create a backup of installed packages",
+                "None of the above"
+            ],
+            "correctAnswer": "To lock the versions of installed packages",
+            "explanation": "`package-lock.json` locks the versions of installed packages to ensure consistent installs."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which command is used to view all globally installed packages?",
+            "options": [
+                "npm list -g",
+                "npm show -g",
+                "npm view -g",
+                "npm global -l"
+            ],
+            "correctAnswer": "npm list -g",
+            "explanation": "`npm list -g` is used to view all globally installed packages."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What does the `--global` flag do in NPM?",
+            "options": [
+                
+                "Installs a package locally in your project",
+                "Installs a package globally on your system",
+                "Updates a package globally on your system",
+                "None of the above"
+            ],
+            "correctAnswer": "Installs a package globally on your system",
+            "explanation": "`--global` flag installs a package globally, making it available across your system."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you check the version of NPM installed?",
+            "options": [
+                "npm version",
+                "npm -v",
+                "npm check-version",
+                "npm --version"
+            ],
+            "correctAnswer": "npm -v",
+            "explanation": "`npm -v` is used to check the version of NPM installed on your system."
+        }
+    ],
+
+    "Tailwind-CSS": [
+        {
+            "type": "multiple-choice",
+            "question": "What is Tailwind CSS?",
+            "options": [
+                "A CSS framework",
+                "A JavaScript library",
+                "A HTML template engine",
+                "A CSS preprocessor"
+            ],
+            "correctAnswer": "A CSS framework",
+            "explanation": "Tailwind CSS is a utility-first CSS framework for creating custom designs."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you apply a utility class in Tailwind CSS?",
+            "options": [
+                "Using the style attribute",
+                "Using the id attribute",
+                "Using the class attribute",
+                "Using the data attribute"
+            ],
+            "correctAnswer": "Using the class attribute",
+            "explanation": "Utility classes in Tailwind CSS are applied using the class attribute."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `@apply` directive in Tailwind CSS?",
+            "options": [                
+                "To create custom components",
+                "To import styles from other files",
+                "None of the above",
+                "To apply multiple utility classes to an element"
+            ],
+            "correctAnswer": "To apply multiple utility classes to an element",
+            "explanation": "`@apply` directive allows you to apply multiple utility classes to a single CSS rule."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you customize Tailwind CSS configuration?",
+            "options": [               
+                "By editing package.json file",
+                "By editing tailwind.config.js file",
+                "By editing index.html file",
+                "By editing style.css file"
+            ],
+            "correctAnswer": "By editing tailwind.config.js file",
+            "explanation": "`tailwind.config.js` file is used to customize Tailwind CSS configuration."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the default color palette in Tailwind CSS?",
+            "options": [
+                "Red, Green, Blue, Yellow, Purple, Pink",
+                "Black, White, Gray, Red, Green, Blue",
+                "Primary, Secondary, Tertiary colors",
+                "None of the above"
+            ],
+            "correctAnswer": "Red, Green, Blue, Yellow, Purple, Pink",
+            "explanation": "`Red`, `Green`, `Blue`, `Yellow`, `Purple`, and `Pink` are part of the default color palette."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you create a responsive design in Tailwind CSS?",
+            "options": [
+                "Using media queries",
+                "Using responsive utility classes",
+                "Using flex-box",
+                "None of the above"
+            ],
+            "correctAnswer": "Using responsive utility classes",
+            "explanation": "Tailwind CSS provides responsive utility classes to create responsive designs."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `flex` utility class in Tailwind CSS?",
+            "options": [              
+                "To create a grid layout",
+                "To center elements",
+                "To create a flex container",
+                "None of the above"
+            ],
+            "correctAnswer": "To create a flex container",
+            "explanation": "`flex` utility class is used to create a flex container in Tailwind CSS."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you add custom fonts in Tailwind CSS?",
+            "options": [
+                
+                "@import rule",
+                "@apply rule",
+                "@tailwind rule",
+                "@font-face rule"
+            ],
+            "correctAnswer": "@font-face rule",
+            "explanation": "`@font-face` rule is used to add custom fonts in Tailwind CSS."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `@layer` directive in Tailwind CSS?",
+            "options": [
+                "To define custom layers for styles",
+                "To import styles from other files",
+                "@apply multiple utility classes",
+                "@import other styles"
+            ],
+            "correctAnswer": "To define custom layers for styles",
+            "explanation": "`@layer` directive allows you to define custom layers for your styles."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you enable JIT mode in Tailwind CSS?",
+            "options": [
+                
+                "By using the --jit flag",
+                "By setting mode: 'jit' in tailwind.config.js",
+                "By using the jit command",
+                "None of the above"
+            ],
+            "correctAnswer": "By setting mode: 'jit' in tailwind.config.js",
+            "explanation": "`mode: 'jit'` in `tailwind.config.js` enables JIT mode in Tailwind CSS."
+        }
+    ],
+
+    "React": [
+        {
+            "type": "multiple-choice",
+            "question": "What is React?",
+            "options": [
+                "A JavaScript library for building user interfaces",
+                "A CSS framework",
+                "A backend framework",
+                "A database management system"
+            ],
+            "correctAnswer": "A JavaScript library for building user interfaces",
+            "explanation": "React is a JavaScript library for building user interfaces, developed by Facebook."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `useState` hook in React?",
+            "options": [
+                "To manage lifecycle methods",
+                "To manage state in functional components",
+                "To handle side effects",
+                "To create class components"
+            ],
+            "correctAnswer": "To manage state in functional components",
+            "explanation": "`useState` hook is used to manage state in functional components."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you create a functional component in React?",
+            "options": [
+                "<MyComponent />",
+                "<function MyComponent />",
+                "@MyComponent",
+                "function MyComponent() {}"
+            ],
+            "correctAnswer": "function MyComponent() {}",
+            "explanation": "`function MyComponent() {}` is the syntax to create a functional component in React."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is JSX?",
+            "options": [
+                "JavaScript XML",
+                "JavaScript Extension",
+                "JavaScript Syntax Extension",
+                "None of the above"
+            ],
+            "correctAnswer": "JavaScript XML",
+            "explanation": "`JSX` stands for JavaScript XML, which allows you to write HTML-like syntax in JavaScript."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`props` in React are used for what purpose?",
+            "options": [
+                "To manage state in components",
+                "To handle events",
+                "To pass data from parent to child components",
+                "None of the above"
+            ],
+            "correctAnswer": "To pass data from parent to child components",
+            "explanation": "`props` are used to pass data from parent to child components in React."
+        },
+       {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `useEffect` hook in React?",
+            "options": [
+                "To manage side effects in functional components",
+                "To manage state",
+                "To create class components",
+                "To handle events"
+            ],
+            "correctAnswer": "To manage side effects in functional components",
+            "explanation": "`useEffect` hook is used to manage side effects in functional components."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you conditionally render a component in React?",
+            "options": [
+                "Using if statements",
+                "Using ternary operators",
+                "Using logical && operator",
+                "All of the above"
+            ],
+            "correctAnswer": "All of the above",
+            "explanation": "You can conditionally render components using if statements, ternary operators, or logical && operator."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `key` prop in React?",
+            "options": [
+                
+                "To pass data to child components",
+                "To manage state",
+                "None of the above",
+                "To uniquely identify elements in a list"
+            ],
+            "correctAnswer": "To uniquely identify elements in a list",
+            "explanation": "`key` prop is used to uniquely identify elements in a list for efficient updates."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`state` in React is used for what purpose?",
+            "options": [
+                "To pass data between components",
+                "To handle events",
+                "To manage local component data",
+                "None of the above"
+            ],
+            "correctAnswer": "To manage local component data",
+            "explanation": "`state` is used to manage local component data that can change over time."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you handle events in React?",
+            "options": [
+                "Using props",
+                "Using event handlers",
+                "Using state",
+                "None of the above"
+            ],
+            "correctAnswer": "Using event handlers",
+            "explanation": "Events in React are handled using event handlers, which are functions that respond to user actions."
+        }
     ]
 }

@@ -8,7 +8,7 @@ import "./styles.css";
 import "./Quiz.css";
 
 function Quiz() {
-  const questions = quizData["JavaScript"];
+  const questions = quizData["React"];
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState("");
   const [isAnswered, setIsAnswered] = useState(false);
