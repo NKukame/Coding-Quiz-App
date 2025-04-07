@@ -8,7 +8,9 @@ import "./styles.css";
 import "./Quiz.css";
 
 function Quiz() {
-  const questions = quizData["React"];
+  const questions = quizData["CSS"];
+  const [score, setScore] = useState(0);
+  const [showResult, setShowResult] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState("");
   const [isAnswered, setIsAnswered] = useState(false);
@@ -18,9 +20,6 @@ function Quiz() {
   }
   const currentQuestion = questions[currentQuestionIndex];
   
-  // const jsQuestions = quizData["JavaScript"];
-  // const currentQuestion = jsQuestions[currentQuestionIndex];
-  
   if (!currentQuestion) {
     return <p>No question found.</p>;
   }
@@ -28,14 +27,25 @@ function Quiz() {
   const handleOptionChange = (option) => {
     setSelectedOption(option);
     setIsAnswered(true);
+
+    if (option === currentQuestion.correctAnswer) {
+      setScore((prev) => prev + 1);
+    }
   };
 
   const handleNext = () => {
-    if (currentQuestionIndex < questions.length - 1) {
+    const isLastQuestion = currentQuestionIndex === questions.length - 1;
+
+    if (!isLastQuestion) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedOption("");
       setIsAnswered(false);
+    } else {
+      // Quiz is finished!
+      setShowResult(true);
     }
+
+    
   };
 
   const handlePrev = () => {
@@ -159,6 +169,20 @@ function Quiz() {
 
         </div>
       </div>
+
+      {showResult && (
+          <div className="modal-backdrop">
+            <div className="modal">
+              <h2>Quiz Completed 🎉</h2>
+              <p>
+                You Scored <strong>{score}</strong> Out of{" "}
+                <strong>{questions.length}</strong>
+              </p>
+              <button onClick={() => window.location.reload()} className="restart-quiz">Restart Quiz</button>
+            </div>
+          </div>
+      )}
+
     </>
   );
 }
