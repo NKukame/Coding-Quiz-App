@@ -1,11 +1,55 @@
 import { Link } from "react-router";
+import { useState } from "react";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import TimeLoader from "./components/TimeLoader";
+import quizData from "./quiz.json"
 import "./styles.css";
 import "./Quiz.css";
 
 function Quiz() {
+  const questions = quizData["JavaScript"];
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedOption, setSelectedOption] = useState("");
+  const [isAnswered, setIsAnswered] = useState(false);
+
+  if (!quizData || quizData.length === 0) {
+    return <p>Loading questions...</p>;
+  }
+  const currentQuestion = questions[currentQuestionIndex];
+  
+  // const jsQuestions = quizData["JavaScript"];
+  // const currentQuestion = jsQuestions[currentQuestionIndex];
+  
+  if (!currentQuestion) {
+    return <p>No question found.</p>;
+  }
+
+  const handleOptionChange = (option) => {
+    setSelectedOption(option);
+    setIsAnswered(true);
+  };
+
+  const handleNext = () => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setSelectedOption("");
+      setIsAnswered(false);
+    }
+  };
+
+  const handlePrev = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(currentQuestionIndex - 1);
+      setSelectedOption("");
+      setIsAnswered(false);
+    }
+  };
+
+  const isCorrect = selectedOption === currentQuestion.correctAnswer;
+  
+
+  const progress = Math.round(((currentQuestionIndex + 1) / quizData.length) * 100);
   return (
     <>
       <Header heading="Quiz Page" />
@@ -17,57 +61,54 @@ function Quiz() {
 
           <div className="quiz-header">
             <div className="progress-bar">
-              <div className="progress-fill"></div>
-              <p>25%</p>
+              <div className="progress-fill" style={{width: `${((currentQuestionIndex + 1) / questions.length) * 100}%`, }}></div>
+              <p> {((currentQuestionIndex + 1) / questions.length) * 100}%</p>
             </div>
           </div>
 
           <div className="quiz-body">
 
             <div className="quiz-question-container">
-              <h3>Question 1 Out 10</h3>
-              <p>What is Java?</p>
+              <h3>Question {currentQuestionIndex + 1} of {questions.length}</h3>
+              <p>{currentQuestion?.question || "Loading question..."}</p>
             </div>
 
             <div className="quiz-option-container">
               <h3>Options</h3>
 
               <div className="quiz-radio-option">
-                <div class="custom-radio-group">
-                  <label class="custom-radio-container">
-                    <input type="radio" name="custom-radio" value="option1" />
-                    <span class="custom-radio-checkmark"></span>
-                    Option 1
-                  </label>
-                  <label class="custom-radio-container">
-                    <input type="radio" name="custom-radio" value="option2" />
-                    <span class="custom-radio-checkmark"></span>
-                    Option 2
-                  </label>
-                  <label class="custom-radio-container">
-                    <input type="radio" name="custom-radio" value="option3" />
-                    <span class="custom-radio-checkmark"></span>
-                    Option 3
-                  </label>
-                  <label class="custom-radio-container">
-                    <input type="radio" name="custom-radio" value="option3" />
-                    <span class="custom-radio-checkmark"></span>
-                    Option 4
-                  </label>
+                <div className="custom-radio-group">
+                  {currentQuestion.options.map((option, index) => (
+                    <label key={index} className="custom-radio-container">
+                      <input
+                        type="radio"
+                        name={`question-${currentQuestionIndex}`}
+                        value={option}
+                        checked={selectedOption === option}
+                        onChange={() => handleOptionChange(option)}
+                      />
+                      <span className="custom-radio-checkmark"></span>
+                      {option}
+                    </label>
+                  ))}
                 </div>
               </div>
 
-              <div className="question-explaintion-container">
-                <h4>Explaination</h4>
-                <p>.............</p>
-              </div>
+              {isAnswered && (
+                <div className="question-explanation-container">
+                  <h4>
+                    {isCorrect ? "✅ Correct!" : "❌ Incorrect"}
+                  </h4>
+                  <p>{currentQuestion.explanation}</p>
+                </div>
+              )}
               
             </div>
 
           </div>
 
           <div className="quiz-footer">
-            <button className="animated-button button-1">
+            <button className="animated-button button-1" onClick={handlePrev} disabled={currentQuestionIndex === 0}>
                     <svg
                       viewBox="0 0 24 24"
                       className="arr-1 btn1-arr1"
@@ -96,7 +137,7 @@ function Quiz() {
 
             </div>
 
-            <button className="animated-button">
+            <button className="animated-button" onClick={handleNext}>
                     <svg
                       viewBox="0 0 24 24"
                       className="arr-2"

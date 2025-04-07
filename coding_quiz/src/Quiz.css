@@ -80,7 +80,7 @@
   background-color: var(--gold);
   color: var(--peach);
   width: 90%;
-  height: 60%;
+  height: 65%;
   margin-bottom: auto;
   border-radius: 20px;
 }
@@ -170,9 +170,9 @@
   transform: translate(-50%, -50%);
 }
 
-.question-explaintion-container{
+.question-explanation-container{
   margin: 20px;
-  font-size: 25px;
+  font-size: 21px;
 }
 
 /* Quiz Footer */

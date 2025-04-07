@@ -1,0 +1,124 @@
+{
+    "JavaScript": [
+        {
+            "type": "multiple-choice",
+            "question": "What is the output of `typeof null` in JavaScript?",
+            "options": [
+                "object",
+                "null",
+                "undefined",
+                "boolean"
+            ],
+            "correctAnswer": "object",
+            "explanation": "In JavaScript, the `typeof null` is an object due to a bug in the language that dates back to its early days."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which of the following is a JavaScript data type?",
+            "options": [
+                "String",
+                "Number",
+                "Boolean",
+                "All of the above"
+            ],
+            "correctAnswer": "All of the above",
+            "explanation": "JavaScript supports several data types including String, Number, and Boolean."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What does the `===` operator do in JavaScript?",
+            "options": [
+                "Checks for equality and type",
+                "Checks for equality only",
+                "Checks for type only",
+                "None of the above"
+            ],
+            "correctAnswer": "Checks for equality and type",
+            "explanation": "`===` checks both value and type, while `==` checks only value."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What will be the output of `console.log(0.1 + 0.2 === 0.3)`?",
+            "options": [
+                "true",
+                "false",
+                "undefined",
+                "NaN"
+            ],
+            "correctAnswer": "false",
+            "explanation": "Due to floating-point precision issues, `0.1 + 0.2` does not equal `0.3`."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `this` keyword in JavaScript?",
+            "options": [
+                "Refers to the global object",
+                "Refers to the current function",
+                "Refers to the current object",
+                "None of the above"
+            ],
+            "correctAnswer": "Refers to the current object",
+            "explanation": "`this` refers to the object that is executing the current function."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which method is used to convert a JSON string into a JavaScript object?",
+            "options": [
+                "JSON.parse()",
+                "JSON.stringify()",
+                "JSON.convert()",
+                "JSON.objectify()"
+            ],
+            "correctAnswer": "JSON.parse()",
+            "explanation": "`JSON.parse()` converts a JSON string into a JavaScript object."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the output of `console.log(typeof NaN)`?",
+            "options": [
+                "number",
+                "NaN",
+                "undefined",
+                "object"
+            ],
+            "correctAnswer": "number",
+            "explanation": "`NaN` is considered a number in JavaScript, even though it represents 'Not-a-Number'."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "Which of the following is not a JavaScript framework?",
+            "options": [
+                "React",
+                "Angular",
+                "Django",
+                "Vue"
+            ],
+            "correctAnswer": "Django",
+            "explanation": "Django is a Python web framework, while React, Angular, and Vue are JavaScript frameworks."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What will be the output of `console.log(1 + '1')`?",
+            "options": [
+                "'11'",
+                "'2'",
+                "'undefined'",
+                "'NaN'"
+            ],
+            "correctAnswer": "'11'",
+            "explanation": "`1 + '1'` results in string concatenation, producing `'11'`."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`let x = 10; x++; console.log(x); What will be logged?`",
+            "options": [
+                "10",
+                "11",
+                "undefined",
+                "-1"
+            ],
+            "correctAnswer": "11",
+            "explanation": "`x++` increments `x` by 1, so it logs `11`."
+        }
+    ]
+}
