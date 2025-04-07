@@ -263,6 +263,14 @@
   background-color: var(--blue);
 }
 
+.different-option-btn{
+  background-color: var(--dark-blue);
+}
+
+.different-option-btn:hover{
+  background-color: var(--gold);
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1.2);

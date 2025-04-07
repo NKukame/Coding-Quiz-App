@@ -1,5 +1,6 @@
 import { Link } from "react-router";
-import { useState } from "react";
+import { useLocation, useNavigate } from "react-router";
+import { useState, useEffect } from "react";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import TimeLoader from "./components/TimeLoader";
@@ -8,12 +9,27 @@ import "./styles.css";
 import "./Quiz.css";
 
 function Quiz() {
-  const questions = quizData["CSS"];
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const { language, numQuestions } = location.state || {};
+
+  const allQuestions = quizData[language] || [];
+  const questions = allQuestions.slice(0, numQuestions || allQuestions.length);
+
+  // const questions = quizData["CSS"];
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState("");
   const [isAnswered, setIsAnswered] = useState(false);
+
+  useEffect(() => {
+    
+    if (!language || !numQuestions) {
+      navigate("/");
+    }
+  }, [language, numQuestions, navigate]);
 
   if (!quizData || quizData.length === 0) {
     return <p>Loading questions...</p>;
@@ -60,6 +76,7 @@ function Quiz() {
   
 
   const progress = Math.round(((currentQuestionIndex + 1) / quizData.length) * 100);
+
   return (
     <>
       <Header heading="Quiz Page" />
@@ -178,7 +195,8 @@ function Quiz() {
                 You Scored <strong>{score}</strong> Out of{" "}
                 <strong>{questions.length}</strong>
               </p>
-              <button onClick={() => window.location.reload()} className="restart-quiz">Restart Quiz</button>
+              <button onClick={() => window.location.reload()} className="restart-quiz">Restart This Quiz</button>
+              <button onClick={() => navigate("/customization")} className="restart-quiz different-option-btn">Different Options</button>
             </div>
           </div>
       )}
