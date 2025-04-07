@@ -12,7 +12,7 @@ function Quiz() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const { language, numQuestions } = location.state || {};
+  const { language, numQuestions, timeLimit } = location.state || {};
 
   const allQuestions = quizData[language] || [];
   const questions = allQuestions.slice(0, numQuestions || allQuestions.length);
@@ -23,6 +23,30 @@ function Quiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState("");
   const [isAnswered, setIsAnswered] = useState(false);
+  const [secondsRemaining, setSecondsRemaining] = useState(timeLimit * 60); 
+
+  useEffect(() => {
+    if (showResult) return;
+
+    const interval = setInterval(() => {
+      setSecondsRemaining((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          setShowResult(true);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [showResult]);
+
+  const formatTime = () => {
+    const minutes = Math.floor(secondsRemaining / 60);
+    const seconds = secondsRemaining % 60;
+    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  };
 
   useEffect(() => {
     
@@ -159,7 +183,7 @@ function Quiz() {
                 <TimeLoader/>
               
               <div className="timer-text">
-                <p>01.30</p>
+                <p>{formatTime()}</p>
               </div>
 
             </div>
