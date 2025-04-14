@@ -44,3 +44,6 @@
     color: var(--gold);
 }
 
+.sidebar-logo-container p{
+    font-size: 20px;
+}
