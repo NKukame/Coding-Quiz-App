@@ -61,7 +61,8 @@ function Customization() {
                     <option value="NPM">NPM</option>
                     <option value="Tailwind-CSS">Tailwind CSS</option>
                     <option value="React">React</option>
-                    
+                    <option value="NodeJS">Node.js</option>
+                    <option value="PostgreSQL">PostgreSQL</option>
                   </select>
 
                   {/* Question Type */}

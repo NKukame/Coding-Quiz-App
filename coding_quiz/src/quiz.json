@@ -1174,5 +1174,401 @@
             "correctAnswer": "True",
             "explanation": "`ReactDOM.render` is used to render a React component to the DOM."
         }
+    ],
+
+    "NodeJS": [
+        {
+            "type": "multiple-choice",
+            "question": "What is Node.js?",
+            "options": [
+                "A JavaScript runtime built on Chrome's V8 JavaScript engine",
+                "A CSS framework",
+                "A database management system",
+                "A front-end library"
+            ],
+            "correctAnswer": "A JavaScript runtime built on Chrome's V8 JavaScript engine",
+            "explanation": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine, allowing you to run JavaScript on the server."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you create a new Node.js project?",
+            "options": [
+                
+                "node create project",
+                "npm start",
+                "node init",
+                "npm init"
+            ],
+            "correctAnswer": "npm init",
+            "explanation": "`npm init` is used to create a new Node.js project and generate a package.json file."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `require` function in Node.js?",
+            "options": [
+                
+                "To export modules",
+                "To create modules",
+                "To import modules",
+                "None of the above"
+            ],
+            "correctAnswer": "To import modules",
+            "explanation": "`require` function is used to import modules in Node.js."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`npm install` command is used for what purpose?",
+            "options": [
+                
+                "To install packages from npm registry",
+                "To uninstall packages from npm registry",
+                "To update packages in npm registry",
+                "None of the above"
+            ],
+            "correctAnswer": "To install packages from npm registry",
+            "explanation": "`npm install` command is used to install packages from npm registry."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `package.json` file in Node.js?",
+            "options": [
+                "To manage project dependencies",
+                "To define project metadata",
+                "To configure scripts",
+                "All of the above"
+            ],
+            "correctAnswer": "All of the above",
+            "explanation": "`package.json` file is used to manage project dependencies, define metadata, and configure scripts."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you create a simple HTTP server in Node.js?",
+            "options": [
+                
+                "Using express framework",
+                "Using http.createServer() method",
+                "Using fs module",
+                "None of the above"
+            ],
+            "correctAnswer": "Using http.createServer() method",
+            "explanation": "`http.createServer()` method is used to create a simple HTTP server in Node.js."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`process.env` is used for what purpose in Node.js?",
+            "options": [
+                "To access environment variables",
+                "To manage process lifecycle",
+                "To handle errors",
+                "None of the above"
+            ],
+            "correctAnswer": "To access environment variables",
+            "explanation": "`process.env` is used to access environment variables in Node.js."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `next()` function in Express.js?",
+            "options": [
+                
+                "To end the request-response cycle",
+                "To pass control to the next middleware function",
+                "To send a response to the client",
+                "None of the above"
+            ],
+            "correctAnswer": "To pass control to the next middleware function",
+            "explanation": "`next()` function is used to pass control to the next middleware function in Express.js."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`fs` module in Node.js is used for what purpose?",
+            "options": [
+                
+                "To create HTTP servers",
+                "To manage process lifecycle",
+                "To handle file system operations",
+                "None of the above"
+            ],
+            "correctAnswer": "To handle file system operations",
+            "explanation": "`fs` module is used to handle file system operations in Node.js."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`express` is a framework for what purpose in Node.js?",
+            "options": [
+                "To create web applications",
+                "To manage databases",
+                "To handle file uploads",
+                "None of the above"
+            ],
+            "correctAnswer": "To create web applications",
+            "explanation": "`express` is a web application framework for Node.js, used to create web applications."
+        },
+
+        {
+            "type": "true-or-false",
+            "question": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine, allowing you to run JavaScript on the server."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`npm init` command is used to create a new Node.js project.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`npm init` command is used to create a new Node.js project and generate a package.json file."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`require` function is used to export modules in Node.js.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`require` function is used to import modules, not export them."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`npm install` command is used to uninstall packages from npm registry.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`npm install` command is used to install packages, not uninstall them."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`package.json` file is used to manage project dependencies.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`package.json` file is used to manage project dependencies, define metadata, and configure scripts."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`http.createServer()` method is used to create a simple HTTP server in Node.js.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`http.createServer()` method is used to create a simple HTTP server in Node.js."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`process.env` is used to access environment variables in Node.js.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`process.env` is used to access environment variables in Node.js."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`next()` function is used to end the request-response cycle in Express.js.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`next()` function is used to pass control to the next middleware function, not end the cycle."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`fs` module is used to handle file system operations in Node.js.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`fs` module is used to handle file system operations in Node.js."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`express` is a framework for creating web applications in Node.js.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`express` is a web application framework for Node.js, used to create web applications."
+        }
+    ],
+
+    "PostgreSQL": [
+        {
+            "type": "multiple-choice",
+            "question": "What is PostgreSQL?",
+            "options": [
+                
+                "A NoSQL database",
+                "A relational database management system",
+                "A front-end framework",
+                "A CSS preprocessor"
+            ],
+            "correctAnswer": "A relational database management system",
+            "explanation": "PostgreSQL is a powerful, open-source relational database management system."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "How do you create a new database in PostgreSQL?",
+            "options": [
+                "CREATE DATABASE mydb;",
+                "CREATE NEW DATABASE mydb;",
+                "NEW DATABASE mydb;",
+                "None of the above"
+            ],
+            "correctAnswer": "CREATE DATABASE mydb;",
+            "explanation": "`CREATE DATABASE mydb;` is the SQL command to create a new database in PostgreSQL."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What is the purpose of the `SELECT` statement in SQL?",
+            "options": [
+                "To insert data into a table",
+                "To update data in a table",
+                "To retrieve data from a table",
+                "To delete data from a table"
+            ],
+            "correctAnswer": "To retrieve data from a table",
+            "explanation": "`SELECT` statement is used to retrieve data from a table in SQL."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`JOIN` clause is used for what purpose in SQL?",
+            "options": [
+                "To filter records based on a condition",
+                "To sort records in ascending or descending order",
+                "To combine rows from two or more tables based on a related column",
+                "None of the above"
+            ],
+            "correctAnswer": "`To combine rows from two or more tables based on a related column",
+            "explanation": "`JOIN` clause is used to combine rows from two or more tables based on a related column."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`WHERE` clause is used for what purpose in SQL?",
+            "options": [
+                
+                "To filter records based on a condition",
+                "To sort records in ascending or descending order",
+                "To group records based on a condition",
+                "None of the above"
+            ],
+            "correctAnswer": "To filter records based on a condition",
+            "explanation": "`WHERE` clause is used to filter records based on a specified condition."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`INSERT INTO` statement is used for what purpose in SQL?",
+            "options": [
+                "To update data in a table",
+                "To delete data from a table",
+                "To insert new data into a table",
+                "To retrieve data from a table"
+            ],
+            "correctAnswer": "To insert new data into a table",
+            "explanation": "`INSERT INTO` statement is used to insert new data into a table."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`UPDATE` statement is used for what purpose in SQL?",
+            "options": [
+                "To insert new data into a table",
+                "To update existing data in a table",
+                "To delete data from a table",
+                "To retrieve data from a table"
+            ],
+            "correctAnswer": "To update existing data in a table",
+            "explanation": "`UPDATE` statement is used to update existing data in a table."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`DELETE FROM` statement is used for what purpose in SQL?",
+            "options": [
+                "To insert new data into a table",
+                "To update existing data in a table",
+                "To delete data from a table",
+                "To retrieve data from a table"
+            ],
+            "correctAnswer": "To delete data from a table",
+            "explanation": "`DELETE FROM` statement is used to delete data from a table."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`GROUP BY` clause is used for what purpose in SQL?",
+            "options": [
+                "To filter records based on a condition",
+                "To sort records in ascending or descending order",
+                "To group rows that have the same values in specified columns into summary rows",
+                "None of the above"
+            ],
+            "correctAnswer": "To group rows that have the same values in specified columns into summary rows",
+            "explanation": "`GROUP BY` clause is used to group rows that have the same values in specified columns into summary rows."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`ORDER BY` clause is used for what purpose in SQL?",
+            "options": [
+                "To filter records based on a condition",
+                "To sort records in ascending or descending order",
+                "To group records based on a condition",
+                "None of the above"
+            ],
+            "correctAnswer": "To sort records in ascending or descending order",
+            "explanation": "`ORDER BY` clause is used to sort records in ascending or descending order."
+        },
+
+        {
+            "type": "true-or-false",
+            "question": "PostgreSQL is a relational database management system.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "PostgreSQL is a powerful, open-source relational database management system."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`CREATE DATABASE mydb;` is the SQL command to create a new database.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`CREATE DATABASE mydb;` is the SQL command to create a new database in PostgreSQL."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`SELECT` statement is used to insert data into a table.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`SELECT` statement is used to retrieve data from a table, not insert it."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`JOIN` clause is used to filter records based on a condition.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`JOIN` clause is used to combine rows from two or more tables based on a related column."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`WHERE` clause is used to filter records based on a specified condition.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`WHERE` clause is used to filter records based on a specified condition."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`INSERT INTO` statement is used to update existing data in a table.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`INSERT INTO` statement is used to insert new data into a table, not update it."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`UPDATE` statement is used to  update existing data in a table.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`UPDATE` statement is used to update existing data in a table, not delete it."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`DELETE FROM` statement is used to retrieve data from a table.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`DELETE FROM` statement is used to delete data from a table, not retrieve it."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`GROUP BY` clause is used to sort records in ascending or descending order.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`GROUP BY` clause is used to group rows that have the same values in specified columns into summary rows."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`ORDER BY` clause is used to sort records in ascending or descending order.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`ORDER BY` clause is used to sort records in ascending or descending order."
+        }
     ]
 }
