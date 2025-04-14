@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 import { useLocation, useNavigate } from "react-router";
 import { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import TimeLoader from "./components/TimeLoader";
@@ -12,10 +14,13 @@ function Quiz() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const { language, numQuestions, timeLimit } = location.state || {};
+  const { language, questionType, numQuestions, timeLimit } = location.state || {};
 
   const allQuestions = quizData[language] || [];
-  const questions = allQuestions.slice(0, numQuestions || allQuestions.length);
+  const filteredQuestions = allQuestions.filter(
+    (q) => q.type === questionType
+  );
+  const questions = filteredQuestions.slice(0, numQuestions);
 
   // const questions = quizData["CSS"];
   const [score, setScore] = useState(0);
@@ -74,6 +79,12 @@ function Quiz() {
   };
 
   const handleNext = () => {
+
+    if (!selectedOption) {
+      toast.warning("Please Select An Option Before Proceeding.");
+      return;
+    }
+
     const isLastQuestion = currentQuestionIndex === questions.length - 1;
 
     if (!isLastQuestion) {
@@ -112,8 +123,8 @@ function Quiz() {
 
           <div className="quiz-header">
             <div className="progress-bar">
-              <div className="progress-fill" style={{width: `${((currentQuestionIndex + 1) / questions.length) * 100}%`, }}></div>
-              <p> {((currentQuestionIndex + 1) / questions.length) * 100}%</p>
+              <div className="progress-fill" style={{width: `${Math.round(((currentQuestionIndex + 1) / questions.length) * 100)}%`,}}></div>
+              <p>{Math.round(((currentQuestionIndex + 1) / questions.length) * 100)}%</p>
             </div>
           </div>
 
@@ -137,6 +148,7 @@ function Quiz() {
                         value={option}
                         checked={selectedOption === option}
                         onChange={() => handleOptionChange(option)}
+                        disabled={isAnswered}
                       />
                       <span className="custom-radio-checkmark"></span>
                       {option}
@@ -159,7 +171,8 @@ function Quiz() {
           </div>
 
           <div className="quiz-footer">
-            <button className="animated-button button-1" onClick={handlePrev} disabled={currentQuestionIndex === 0}>
+          {/* disabled={currentQuestionIndex === 0} */}
+            <button className="animated-button button-1" onClick={handlePrev} disabled>
                     <svg
                       viewBox="0 0 24 24"
                       className="arr-1 btn1-arr1"
@@ -188,7 +201,7 @@ function Quiz() {
 
             </div>
 
-            <button className="animated-button" onClick={handleNext}>
+            <button className="animated-button" onClick={handleNext} >
                     <svg
                       viewBox="0 0 24 24"
                       className="arr-2"
@@ -210,6 +223,9 @@ function Quiz() {
 
         </div>
       </div>
+
+      <ToastContainer position="top-center" autoClose={2000} />
+
 
       {showResult && (
           <div className="modal-backdrop">

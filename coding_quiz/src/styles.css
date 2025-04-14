@@ -94,7 +94,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 330px;
     height: 60px;
     background-color: var(--blue);
     border-radius: 50px;
@@ -109,8 +109,9 @@ body{
 .main-top-btn a{
     text-decoration: none;
     color: var(--peach);
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 700;
+    margin-right: 30px;
 }
 
 .circle{

@@ -44,7 +44,7 @@ function App() {
               <Link to="/customization">
                 <div className="main-top-btn">
                   <a href="#" className="main-top-btn-link">
-                    Start Learning
+                    Click Here To Start Learning
                   </a>
                   <span className="circle">
                     <p class="arrow">&rarr;</p>{" "}
