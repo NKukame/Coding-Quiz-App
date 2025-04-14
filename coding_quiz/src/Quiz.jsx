@@ -120,8 +120,8 @@ function Quiz() {
 
           <div className="quiz-header">
             <div className="progress-bar">
-              <div className="progress-fill" style={{width: `${((currentQuestionIndex + 1) / questions.length) * 100}%`, }}></div>
-              <p> {((currentQuestionIndex + 1) / questions.length) * 100}%</p>
+              <div className="progress-fill" style={{width: `${Math.round(((currentQuestionIndex + 1) / questions.length) * 100)}%`,}}></div>
+              <p>{Math.round(((currentQuestionIndex + 1) / questions.length) * 100)}%</p>
             </div>
           </div>
 
