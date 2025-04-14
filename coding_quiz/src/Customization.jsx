@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import "./styles.css";
@@ -15,7 +17,7 @@ function Customization() {
 
   const handleStartQuiz = () => {
     if (!language || !questionType || !numQuestions || !timeLimit) {
-      alert("Please fill out all options.");
+      toast.warning("Please Fill Out All Options Before Proceeding.");
       return;
     }
 
@@ -125,6 +127,8 @@ function Customization() {
           </div>
         </div>
       </div>
+
+      <ToastContainer position="top-center" autoClose={2000} />
     </>
   );
 }
