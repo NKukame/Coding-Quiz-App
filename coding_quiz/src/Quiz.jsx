@@ -14,10 +14,13 @@ function Quiz() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const { language, numQuestions, timeLimit } = location.state || {};
+  const { language, questionType, numQuestions, timeLimit } = location.state || {};
 
   const allQuestions = quizData[language] || [];
-  const questions = allQuestions.slice(0, numQuestions || allQuestions.length);
+  const filteredQuestions = allQuestions.filter(
+    (q) => q.type === questionType
+  );
+  const questions = filteredQuestions.slice(0, numQuestions);
 
   // const questions = quizData["CSS"];
   const [score, setScore] = useState(0);

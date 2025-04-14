@@ -119,6 +119,77 @@
             ],
             "correctAnswer": "11",
             "explanation": "`x++` increments `x` by 1, so it logs `11`."
+        },
+
+        {
+            "type": "true-or-false",
+            "question": "JavaScript is a statically typed language.",          
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "JavaScript is dynamically typed."
+        },
+        {
+            "type": "true-or-false",
+            "question": "In JavaScript, `null` and `undefined` are the same.",          
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`null` is an assignment value, while `undefined` means a variable has been declared but not assigned."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`var` declarations are hoisted to the top of their scope.",          
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`var` declarations are hoisted, meaning they can be referenced before their declaration."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`let` and `const` are block-scoped in JavaScript.",          
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`let` and `const` are block-scoped, meaning they are only accessible within the block they are defined."
+        },
+        {
+            "type": "true-or-false",
+            "question": "JavaScript supports function overloading.",          
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "JavaScript does not support function overloading; the last defined function will overwrite previous ones."
+        },
+        {
+            "type": "true-or-false",
+            "question": "The `===` operator checks for both value and type equality.",          
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`===` checks for both value and type, while `==` checks only value."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`undefined` is a data type in JavaScript.",          
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`undefined` is a primitive data type in JavaScript."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`NaN` is a number in JavaScript.",          
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`NaN` stands for 'Not-a-Number' but is considered a number type in JavaScript."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`this` keyword refers to the global object in JavaScript.",          
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`this` refers to the object that is executing the current function."
+        },
+        {
+            "type": "true-or-false",
+            "question": "JavaScript is a compiled language.",          
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "JavaScript is an interpreted language, not a compiled one."
         }
     ],
 
@@ -243,6 +314,77 @@
             ],
             "correctAnswer": "margin: auto;",
             "explanation": "`margin: auto;` is used to center a block element horizontally."
+        },
+
+        {
+            "type": "true-or-false",
+            "question": "CSS stands for Cascading Style Sheets.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "CSS stands for Cascading Style Sheets, which is used for styling web pages."
+        },
+        {
+            "type": "true-or-false",
+            "question": "The `!important` rule in CSS overrides all other styles.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`!important` gives a style higher priority than other styles."
+        },
+        {
+            "type": "true-or-false",
+            "question": "CSS CANNOT be used to create animations.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "CSS CAN be used to create animations using keyframes and transitions."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`<style>` tag is used to define CSS styles in HTML.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`<style>` tag is used to define internal CSS styles in HTML documents."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`inline` is NOT a display property in CSS.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`inline` is a display property that allows elements to flow inline with text."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`float` property is used for positioning elements in CSS.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`float` property is used to position elements to the left or right of their container."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`px` is a relative unit in CSS.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`px` is an absolute unit in CSS, while `em` and `%` are relative units."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`display: none;` hides an element from the page.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`display: none;` removes the element from the document flow, hiding it from view."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`position: absolute;`cannot position an element relative to its nearest positioned ancestor.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`position: absolute;` positions an element relative to its nearest positioned ancestor."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`flexbox` is a layout model in CSS.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`flexbox` is a layout model that allows for responsive design and alignment of elements."
         }
         
     ],
@@ -371,6 +513,78 @@
             ],
             "correctAnswer": "<ol>",
             "explanation": "`<ol>` tag is used to create an ordered (numbered) list in HTML."
+        },
+
+        {
+            "type": "true-or-false",
+            "question": "HTML is a programming language.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "HTML is a markup language, not a programming language."
+        },
+        {
+            "type": "true-or-false",
+            "question": "The `<head>` element contains metadata about the document.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`<head>` element contains metadata, links to stylesheets, and scripts."
+        },
+        {
+            "type": "true-or-false",
+            "question": "The `<body>` element contains the content of the document.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`<body>` element contains the visible content of the HTML document."
+        },
+        {
+            "type": "true-or-false",
+            "question": "<img> tag is used to display videos in HTML.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`<img>` tag is used to embed images in HTML documents."
+        },
+        {
+            "type": "true-or-false",
+            "question": "<div> tag is a block-level element in HTML.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`<div>` tag is a block-level element used for grouping content."
+        },
+        {
+            "type": "true-or-false",
+            "question": "<span> tag is a block-level element in HTML.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`<span>` tag is an inline element used for styling parts of text."
+        },
+        {
+            "type": "true-or-false",
+            "question": "<link> tag is used to link external CSS files.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`<link>` tag is used to link external stylesheets to an HTML document."
+        },
+        {
+            "type": "true-or-false",
+            "question": "<br> tag is not a self-closing tag in HTML.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`<br>` tag is a self-closing tag used for line breaks."
+        }
+        ,
+        {
+            "type": "true-or-false",
+            "question": "<h1> to <h6> tags are used for headings in HTML.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`<h1>` to `<h6>` tags are used to define headings, with `<h1>` being the highest level."
+        },
+        {
+            "type": "true-or-false",
+            "question": "<form> tag is used to create forms in HTML.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`<form>` tag is used to create interactive forms in HTML."
         }
     ],
 
@@ -497,6 +711,77 @@
             ],
             "correctAnswer": "npm -v",
             "explanation": "`npm -v` is used to check the version of NPM installed on your system."
+        },
+
+        {
+            "type": "true-or-false",
+            "question": "NPM is a package manager for JavaScript.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "NPM is a package manager for JavaScript, allowing you to install and manage packages."
+        },
+        {
+            "type": "true-or-false",
+            "question": "NPM can only be used with Node.js.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "NPM can be used with any JavaScript project, not just Node.js."
+        },
+        {
+            "type": "true-or-false",
+            "question": "You can create a package.json file manually.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "You can create a package.json file manually or using `npm init`."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`npm start` is used to run the start script defined in package.json.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`npm start` runs the start script defined in the package.json file."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`npm install` installs packages globally by default.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`npm install` installs packages locally by default unless `-g` flag is used."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`npm update` updates all packages to their latest version.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`npm update` updates all packages to their latest version according to the version range specified in package.json."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`npm audit` checks for vulnerabilities in installed packages.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`npm audit` checks for vulnerabilities in installed packages and suggests fixes."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`npm cache clean` clears the NPM cache.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`npm cache clean` clears the NPM cache to free up space."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`npm run` is used to run scripts defined in package.json.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`npm run` is used to run scripts defined in the package.json file."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`npm link` creates a symbolic link to a package.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`npm link` creates a symbolic link to a package, allowing you to use it globally."
         }
     ],
 
@@ -622,6 +907,77 @@
             ],
             "correctAnswer": "By setting mode: 'jit' in tailwind.config.js",
             "explanation": "`mode: 'jit'` in `tailwind.config.js` enables JIT mode in Tailwind CSS."
+        },
+
+        {
+            "type": "true-or-false",
+            "question": "Tailwind CSS is a utility-first CSS framework.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes."
+        },
+        {
+            "type": "true-or-false",
+            "question": "Tailwind CSS uses a desktop-first approach.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Tailwind CSS uses a mobile-first approach for responsive design."
+        },
+        {
+            "type": "true-or-false",
+            "question": "You can create custom components in Tailwind CSS.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "You can create custom components using utility classes in Tailwind CSS."
+        },
+        {
+            "type": "true-or-false",
+            "question": "Tailwind CSS does not support dark mode.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Tailwind CSS supports dark mode using the `dark` variant."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`@tailwind` directive is used to include Tailwind's base, components, and utilities styles.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`@tailwind` directive is used to include Tailwind's base, components, and utilities styles."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`@apply` directive can be used to apply multiple utility classes to an element.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`@apply` directive allows you to apply multiple utility classes to a single CSS rule."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`@layer` directive is used to define custom layers for styles.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`@layer` directive allows you to define custom layers for your styles."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`@media` queries are not needed in Tailwind CSS.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "@media queries are still needed for custom media queries in Tailwind CSS."
+        },
+        {
+            "type": "true-or-false",
+            "question": "Tailwind CSS does not support custom themes.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Tailwind CSS supports custom themes using the `theme` function in the configuration file."
+        },
+        {
+            "type": "true-or-false",
+            "question": "You can use Tailwind CSS with any front-end framework.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "Tailwind CSS can be used with any front-end framework or even plain HTML."
         }
     ],
 
@@ -746,6 +1102,77 @@
             ],
             "correctAnswer": "Using event handlers",
             "explanation": "Events in React are handled using event handlers, which are functions that respond to user actions."
+        },
+
+        {
+            "type": "true-or-false",
+            "question": "React is a JavaScript library for building user interfaces.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "React is a JavaScript library for building user interfaces, developed by Facebook."
+        },
+        {
+            "type": "true-or-false",
+            "question": "JSX is a syntax extension for JavaScript.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "JSX is a syntax extension that allows you to write HTML-like syntax in JavaScript."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`props` are used to manage state in React.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`props` are used to pass data from parent to child components, not to manage state."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`state` is used to manage local component data.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`state` is used to manage local component data that can change over time."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`useEffect` hook is used to manage side effects in functional components.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`useEffect` hook is used to manage side effects in functional components."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`key` prop is used to uniquely identify elements in a list.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`key` prop is used to uniquely identify elements in a list for efficient updates."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`useState` hook is used to create class components.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "`useState` hook is used to manage state in functional components, not class components."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`useContext` hook is used for state management.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`useContext` hook is used for state management by providing a way to pass data through the component tree."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`useReducer` hook is used for managing complex state logic.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`useReducer` hook is used for managing complex state logic in functional components."
+        },
+        {
+            "type": "true-or-false",
+            "question": "`ReactDOM.render` is used to render a React component to the DOM.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`ReactDOM.render` is used to render a React component to the DOM."
         }
     ]
 }
