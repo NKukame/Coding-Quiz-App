@@ -120,79 +120,107 @@
             "correctAnswer": "11",
             "explanation": "`x++` increments `x` by 1, so it logs `11`."
         },
-
         {
             "type": "true-or-false",
-            "question": "JavaScript is a statically typed language.",          
-            "options": ["True", "False"],
+            "question": "JavaScript is a statically typed language.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "JavaScript is dynamically typed."
         },
         {
             "type": "true-or-false",
-            "question": "In JavaScript, `null` and `undefined` are the same.",          
-            "options": ["True", "False"],
+            "question": "In JavaScript, `null` and `undefined` are the same.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`null` is an assignment value, while `undefined` means a variable has been declared but not assigned."
         },
         {
             "type": "true-or-false",
-            "question": "`var` declarations are hoisted to the top of their scope.",          
-            "options": ["True", "False"],
+            "question": "`var` declarations are hoisted to the top of their scope.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`var` declarations are hoisted, meaning they can be referenced before their declaration."
         },
         {
             "type": "true-or-false",
-            "question": "`let` and `const` are block-scoped in JavaScript.",          
-            "options": ["True", "False"],
+            "question": "`let` and `const` are block-scoped in JavaScript.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`let` and `const` are block-scoped, meaning they are only accessible within the block they are defined."
         },
         {
             "type": "true-or-false",
-            "question": "JavaScript supports function overloading.",          
-            "options": ["True", "False"],
+            "question": "JavaScript supports function overloading.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "JavaScript does not support function overloading; the last defined function will overwrite previous ones."
         },
         {
             "type": "true-or-false",
-            "question": "The `===` operator checks for both value and type equality.",          
-            "options": ["True", "False"],
+            "question": "The `===` operator checks for both value and type equality.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`===` checks for both value and type, while `==` checks only value."
         },
         {
             "type": "true-or-false",
-            "question": "`undefined` is a data type in JavaScript.",          
-            "options": ["True", "False"],
+            "question": "`undefined` is a data type in JavaScript.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`undefined` is a primitive data type in JavaScript."
         },
         {
             "type": "true-or-false",
-            "question": "`NaN` is a number in JavaScript.",          
-            "options": ["True", "False"],
+            "question": "`NaN` is a number in JavaScript.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`NaN` stands for 'Not-a-Number' but is considered a number type in JavaScript."
         },
         {
             "type": "true-or-false",
-            "question": "`this` keyword refers to the global object in JavaScript.",          
-            "options": ["True", "False"],
+            "question": "`this` keyword refers to the global object in JavaScript.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`this` refers to the object that is executing the current function."
         },
         {
             "type": "true-or-false",
-            "question": "JavaScript is a compiled language.",          
-            "options": ["True", "False"],
+            "question": "JavaScript is a compiled language.",
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "JavaScript is an interpreted language, not a compiled one."
         }
     ],
-
     "CSS": [
         {
             "type": "multiple-choice",
@@ -282,7 +310,6 @@
             "type": "multiple-choice",
             "question": "How do you make a list that lists its items with squares in CSS?",
             "options": [
-                
                 "list-type: square;",
                 "list-style-type: square;",
                 "list-style: square;",
@@ -315,86 +342,112 @@
             "correctAnswer": "margin: auto;",
             "explanation": "`margin: auto;` is used to center a block element horizontally."
         },
-
         {
             "type": "true-or-false",
             "question": "CSS stands for Cascading Style Sheets.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "CSS stands for Cascading Style Sheets, which is used for styling web pages."
         },
         {
             "type": "true-or-false",
             "question": "The `!important` rule in CSS overrides all other styles.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`!important` gives a style higher priority than other styles."
         },
         {
             "type": "true-or-false",
             "question": "CSS CANNOT be used to create animations.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "CSS CAN be used to create animations using keyframes and transitions."
         },
         {
             "type": "true-or-false",
             "question": "`<style>` tag is used to define CSS styles in HTML.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`<style>` tag is used to define internal CSS styles in HTML documents."
         },
         {
             "type": "true-or-false",
             "question": "`inline` is NOT a display property in CSS.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`inline` is a display property that allows elements to flow inline with text."
         },
         {
             "type": "true-or-false",
             "question": "`float` property is used for positioning elements in CSS.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`float` property is used to position elements to the left or right of their container."
         },
         {
             "type": "true-or-false",
             "question": "`px` is a relative unit in CSS.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`px` is an absolute unit in CSS, while `em` and `%` are relative units."
         },
         {
             "type": "true-or-false",
             "question": "`display: none;` hides an element from the page.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`display: none;` removes the element from the document flow, hiding it from view."
         },
         {
             "type": "true-or-false",
             "question": "`position: absolute;`cannot position an element relative to its nearest positioned ancestor.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`position: absolute;` positions an element relative to its nearest positioned ancestor."
         },
         {
             "type": "true-or-false",
             "question": "`flexbox` is a layout model in CSS.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`flexbox` is a layout model that allows for responsive design and alignment of elements."
         }
-        
     ],
-
     "HTML": [
         {
             "type": "multiple-choice",
             "question": "What does HTML stand for?",
             "options": [
-                
                 "High Text Markup Language",
                 "Hyperlink and Text Markup Language",
                 "Hyper Text Markup Language",
@@ -455,7 +508,6 @@
             "type": "multiple-choice",
             "question": "What does the `<ul>` tag represent in HTML?",
             "options": [
-                
                 "Unordered Link",
                 "Unique List",
                 "Unique Link",
@@ -480,7 +532,6 @@
             "type": "multiple-choice",
             "question": "What is the purpose of the `<meta>` tag in HTML?",
             "options": [
-                
                 "To create a link to another document",
                 "To provide metadata about the HTML document",
                 "To define a section in the document",
@@ -505,7 +556,6 @@
             "type": "multiple-choice",
             "question": "How can you make a numbered list in HTML?",
             "options": [
-                
                 "<ul>",
                 "<list>",
                 "<nl>",
@@ -514,80 +564,107 @@
             "correctAnswer": "<ol>",
             "explanation": "`<ol>` tag is used to create an ordered (numbered) list in HTML."
         },
-
         {
             "type": "true-or-false",
             "question": "HTML is a programming language.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "HTML is a markup language, not a programming language."
         },
         {
             "type": "true-or-false",
             "question": "The `<head>` element contains metadata about the document.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`<head>` element contains metadata, links to stylesheets, and scripts."
         },
         {
             "type": "true-or-false",
             "question": "The `<body>` element contains the content of the document.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`<body>` element contains the visible content of the HTML document."
         },
         {
             "type": "true-or-false",
             "question": "<img> tag is used to display videos in HTML.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`<img>` tag is used to embed images in HTML documents."
         },
         {
             "type": "true-or-false",
             "question": "<div> tag is a block-level element in HTML.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`<div>` tag is a block-level element used for grouping content."
         },
         {
             "type": "true-or-false",
             "question": "<span> tag is a block-level element in HTML.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`<span>` tag is an inline element used for styling parts of text."
         },
         {
             "type": "true-or-false",
             "question": "<link> tag is used to link external CSS files.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`<link>` tag is used to link external stylesheets to an HTML document."
         },
         {
             "type": "true-or-false",
             "question": "<br> tag is not a self-closing tag in HTML.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`<br>` tag is a self-closing tag used for line breaks."
-        }
-        ,
+        },
         {
             "type": "true-or-false",
             "question": "<h1> to <h6> tags are used for headings in HTML.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`<h1>` to `<h6>` tags are used to define headings, with `<h1>` being the highest level."
         },
         {
             "type": "true-or-false",
             "question": "<form> tag is used to create forms in HTML.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`<form>` tag is used to create interactive forms in HTML."
         }
     ],
-
     "NPM": [
         {
             "type": "multiple-choice",
@@ -617,7 +694,6 @@
             "type": "multiple-choice",
             "question": "What command is used to create a new package.json file?",
             "options": [
-                
                 "npm create",
                 "npm start",
                 "npm new",
@@ -630,7 +706,6 @@
             "type": "multiple-choice",
             "question": "Which command is used to update all packages in NPM?",
             "options": [
-                
                 "npm upgrade",
                 "npm refresh",
                 "npm update",
@@ -691,7 +766,6 @@
             "type": "multiple-choice",
             "question": "What does the `--global` flag do in NPM?",
             "options": [
-                
                 "Installs a package locally in your project",
                 "Installs a package globally on your system",
                 "Updates a package globally on your system",
@@ -712,79 +786,107 @@
             "correctAnswer": "npm -v",
             "explanation": "`npm -v` is used to check the version of NPM installed on your system."
         },
-
         {
             "type": "true-or-false",
             "question": "NPM is a package manager for JavaScript.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "NPM is a package manager for JavaScript, allowing you to install and manage packages."
         },
         {
             "type": "true-or-false",
             "question": "NPM can only be used with Node.js.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "NPM can be used with any JavaScript project, not just Node.js."
         },
         {
             "type": "true-or-false",
             "question": "You can create a package.json file manually.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "You can create a package.json file manually or using `npm init`."
         },
         {
             "type": "true-or-false",
             "question": "`npm start` is used to run the start script defined in package.json.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`npm start` runs the start script defined in the package.json file."
         },
         {
             "type": "true-or-false",
             "question": "`npm install` installs packages globally by default.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`npm install` installs packages locally by default unless `-g` flag is used."
         },
         {
             "type": "true-or-false",
             "question": "`npm update` updates all packages to their latest version.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`npm update` updates all packages to their latest version according to the version range specified in package.json."
         },
         {
             "type": "true-or-false",
             "question": "`npm audit` checks for vulnerabilities in installed packages.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`npm audit` checks for vulnerabilities in installed packages and suggests fixes."
         },
         {
             "type": "true-or-false",
             "question": "`npm cache clean` clears the NPM cache.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`npm cache clean` clears the NPM cache to free up space."
         },
         {
             "type": "true-or-false",
             "question": "`npm run` is used to run scripts defined in package.json.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`npm run` is used to run scripts defined in the package.json file."
         },
         {
             "type": "true-or-false",
             "question": "`npm link` creates a symbolic link to a package.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`npm link` creates a symbolic link to a package, allowing you to use it globally."
         }
     ],
-
     "Tailwind-CSS": [
         {
             "type": "multiple-choice",
@@ -813,7 +915,7 @@
         {
             "type": "multiple-choice",
             "question": "What is the purpose of the `@apply` directive in Tailwind CSS?",
-            "options": [                
+            "options": [
                 "To create custom components",
                 "To import styles from other files",
                 "None of the above",
@@ -825,7 +927,7 @@
         {
             "type": "multiple-choice",
             "question": "How do you customize Tailwind CSS configuration?",
-            "options": [               
+            "options": [
                 "By editing package.json file",
                 "By editing tailwind.config.js file",
                 "By editing index.html file",
@@ -861,7 +963,7 @@
         {
             "type": "multiple-choice",
             "question": "What is the purpose of the `flex` utility class in Tailwind CSS?",
-            "options": [              
+            "options": [
                 "To create a grid layout",
                 "To center elements",
                 "To create a flex container",
@@ -874,7 +976,6 @@
             "type": "multiple-choice",
             "question": "How do you add custom fonts in Tailwind CSS?",
             "options": [
-                
                 "@import rule",
                 "@apply rule",
                 "@tailwind rule",
@@ -899,7 +1000,6 @@
             "type": "multiple-choice",
             "question": "How do you enable JIT mode in Tailwind CSS?",
             "options": [
-                
                 "By using the --jit flag",
                 "By setting mode: 'jit' in tailwind.config.js",
                 "By using the jit command",
@@ -908,79 +1008,107 @@
             "correctAnswer": "By setting mode: 'jit' in tailwind.config.js",
             "explanation": "`mode: 'jit'` in `tailwind.config.js` enables JIT mode in Tailwind CSS."
         },
-
         {
             "type": "true-or-false",
             "question": "Tailwind CSS is a utility-first CSS framework.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes."
         },
         {
             "type": "true-or-false",
             "question": "Tailwind CSS uses a desktop-first approach.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "Tailwind CSS uses a mobile-first approach for responsive design."
         },
         {
             "type": "true-or-false",
             "question": "You can create custom components in Tailwind CSS.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "You can create custom components using utility classes in Tailwind CSS."
         },
         {
             "type": "true-or-false",
             "question": "Tailwind CSS does not support dark mode.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "Tailwind CSS supports dark mode using the `dark` variant."
         },
         {
             "type": "true-or-false",
             "question": "`@tailwind` directive is used to include Tailwind's base, components, and utilities styles.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`@tailwind` directive is used to include Tailwind's base, components, and utilities styles."
         },
         {
             "type": "true-or-false",
             "question": "`@apply` directive can be used to apply multiple utility classes to an element.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`@apply` directive allows you to apply multiple utility classes to a single CSS rule."
         },
         {
             "type": "true-or-false",
             "question": "`@layer` directive is used to define custom layers for styles.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`@layer` directive allows you to define custom layers for your styles."
         },
         {
             "type": "true-or-false",
             "question": "`@media` queries are not needed in Tailwind CSS.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "@media queries are still needed for custom media queries in Tailwind CSS."
         },
         {
             "type": "true-or-false",
             "question": "Tailwind CSS does not support custom themes.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "Tailwind CSS supports custom themes using the `theme` function in the configuration file."
         },
         {
             "type": "true-or-false",
             "question": "You can use Tailwind CSS with any front-end framework.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "Tailwind CSS can be used with any front-end framework or even plain HTML."
         }
     ],
-
     "React": [
         {
             "type": "multiple-choice",
@@ -1042,7 +1170,7 @@
             "correctAnswer": "To pass data from parent to child components",
             "explanation": "`props` are used to pass data from parent to child components in React."
         },
-       {
+        {
             "type": "multiple-choice",
             "question": "What is the purpose of the `useEffect` hook in React?",
             "options": [
@@ -1070,7 +1198,6 @@
             "type": "multiple-choice",
             "question": "What is the purpose of the `key` prop in React?",
             "options": [
-                
                 "To pass data to child components",
                 "To manage state",
                 "None of the above",
@@ -1103,79 +1230,107 @@
             "correctAnswer": "Using event handlers",
             "explanation": "Events in React are handled using event handlers, which are functions that respond to user actions."
         },
-
         {
             "type": "true-or-false",
             "question": "React is a JavaScript library for building user interfaces.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "React is a JavaScript library for building user interfaces, developed by Facebook."
         },
         {
             "type": "true-or-false",
             "question": "JSX is a syntax extension for JavaScript.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "JSX is a syntax extension that allows you to write HTML-like syntax in JavaScript."
         },
         {
             "type": "true-or-false",
             "question": "`props` are used to manage state in React.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`props` are used to pass data from parent to child components, not to manage state."
         },
         {
             "type": "true-or-false",
             "question": "`state` is used to manage local component data.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`state` is used to manage local component data that can change over time."
         },
         {
             "type": "true-or-false",
             "question": "`useEffect` hook is used to manage side effects in functional components.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`useEffect` hook is used to manage side effects in functional components."
         },
         {
             "type": "true-or-false",
             "question": "`key` prop is used to uniquely identify elements in a list.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`key` prop is used to uniquely identify elements in a list for efficient updates."
         },
         {
             "type": "true-or-false",
             "question": "`useState` hook is used to create class components.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`useState` hook is used to manage state in functional components, not class components."
         },
         {
             "type": "true-or-false",
             "question": "`useContext` hook is used for state management.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`useContext` hook is used for state management by providing a way to pass data through the component tree."
         },
         {
             "type": "true-or-false",
             "question": "`useReducer` hook is used for managing complex state logic.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`useReducer` hook is used for managing complex state logic in functional components."
         },
         {
             "type": "true-or-false",
             "question": "`ReactDOM.render` is used to render a React component to the DOM.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`ReactDOM.render` is used to render a React component to the DOM."
         }
     ],
-
     "NodeJS": [
         {
             "type": "multiple-choice",
@@ -1193,7 +1348,6 @@
             "type": "multiple-choice",
             "question": "How do you create a new Node.js project?",
             "options": [
-                
                 "node create project",
                 "npm start",
                 "node init",
@@ -1206,7 +1360,6 @@
             "type": "multiple-choice",
             "question": "What is the purpose of the `require` function in Node.js?",
             "options": [
-                
                 "To export modules",
                 "To create modules",
                 "To import modules",
@@ -1219,7 +1372,6 @@
             "type": "multiple-choice",
             "question": "`npm install` command is used for what purpose?",
             "options": [
-                
                 "To install packages from npm registry",
                 "To uninstall packages from npm registry",
                 "To update packages in npm registry",
@@ -1244,7 +1396,6 @@
             "type": "multiple-choice",
             "question": "How do you create a simple HTTP server in Node.js?",
             "options": [
-                
                 "Using express framework",
                 "Using http.createServer() method",
                 "Using fs module",
@@ -1269,7 +1420,6 @@
             "type": "multiple-choice",
             "question": "What is the purpose of the `next()` function in Express.js?",
             "options": [
-                
                 "To end the request-response cycle",
                 "To pass control to the next middleware function",
                 "To send a response to the client",
@@ -1282,7 +1432,6 @@
             "type": "multiple-choice",
             "question": "`fs` module in Node.js is used for what purpose?",
             "options": [
-                
                 "To create HTTP servers",
                 "To manage process lifecycle",
                 "To handle file system operations",
@@ -1303,85 +1452,112 @@
             "correctAnswer": "To create web applications",
             "explanation": "`express` is a web application framework for Node.js, used to create web applications."
         },
-
         {
             "type": "true-or-false",
             "question": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine, allowing you to run JavaScript on the server."
         },
         {
             "type": "true-or-false",
             "question": "`npm init` command is used to create a new Node.js project.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`npm init` command is used to create a new Node.js project and generate a package.json file."
         },
         {
             "type": "true-or-false",
             "question": "`require` function is used to export modules in Node.js.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`require` function is used to import modules, not export them."
         },
         {
             "type": "true-or-false",
             "question": "`npm install` command is used to uninstall packages from npm registry.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`npm install` command is used to install packages, not uninstall them."
         },
         {
             "type": "true-or-false",
             "question": "`package.json` file is used to manage project dependencies.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`package.json` file is used to manage project dependencies, define metadata, and configure scripts."
         },
         {
             "type": "true-or-false",
             "question": "`http.createServer()` method is used to create a simple HTTP server in Node.js.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`http.createServer()` method is used to create a simple HTTP server in Node.js."
         },
         {
             "type": "true-or-false",
             "question": "`process.env` is used to access environment variables in Node.js.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`process.env` is used to access environment variables in Node.js."
         },
         {
             "type": "true-or-false",
             "question": "`next()` function is used to end the request-response cycle in Express.js.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`next()` function is used to pass control to the next middleware function, not end the cycle."
         },
         {
             "type": "true-or-false",
             "question": "`fs` module is used to handle file system operations in Node.js.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`fs` module is used to handle file system operations in Node.js."
         },
         {
             "type": "true-or-false",
             "question": "`express` is a framework for creating web applications in Node.js.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`express` is a web application framework for Node.js, used to create web applications."
         }
     ],
-
     "PostgreSQL": [
         {
             "type": "multiple-choice",
             "question": "What is PostgreSQL?",
             "options": [
-                
                 "A NoSQL database",
                 "A relational database management system",
                 "A front-end framework",
@@ -1430,7 +1606,6 @@
             "type": "multiple-choice",
             "question": "`WHERE` clause is used for what purpose in SQL?",
             "options": [
-                
                 "To filter records based on a condition",
                 "To sort records in ascending or descending order",
                 "To group records based on a condition",
@@ -1499,74 +1674,103 @@
             "correctAnswer": "To sort records in ascending or descending order",
             "explanation": "`ORDER BY` clause is used to sort records in ascending or descending order."
         },
-
         {
             "type": "true-or-false",
             "question": "PostgreSQL is a relational database management system.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "PostgreSQL is a powerful, open-source relational database management system."
         },
         {
             "type": "true-or-false",
             "question": "`CREATE DATABASE mydb;` is the SQL command to create a new database.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`CREATE DATABASE mydb;` is the SQL command to create a new database in PostgreSQL."
         },
         {
             "type": "true-or-false",
             "question": "`SELECT` statement is used to insert data into a table.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`SELECT` statement is used to retrieve data from a table, not insert it."
         },
         {
             "type": "true-or-false",
             "question": "`JOIN` clause is used to filter records based on a condition.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`JOIN` clause is used to combine rows from two or more tables based on a related column."
         },
         {
             "type": "true-or-false",
             "question": "`WHERE` clause is used to filter records based on a specified condition.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`WHERE` clause is used to filter records based on a specified condition."
         },
         {
             "type": "true-or-false",
             "question": "`INSERT INTO` statement is used to update existing data in a table.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`INSERT INTO` statement is used to insert new data into a table, not update it."
         },
         {
             "type": "true-or-false",
             "question": "`UPDATE` statement is used to  update existing data in a table.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`UPDATE` statement is used to update existing data in a table, not delete it."
         },
         {
             "type": "true-or-false",
             "question": "`DELETE FROM` statement is used to retrieve data from a table.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`DELETE FROM` statement is used to delete data from a table, not retrieve it."
         },
         {
             "type": "true-or-false",
             "question": "`GROUP BY` clause is used to sort records in ascending or descending order.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "`GROUP BY` clause is used to group rows that have the same values in specified columns into summary rows."
         },
         {
             "type": "true-or-false",
             "question": "`ORDER BY` clause is used to sort records in ascending or descending order.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "`ORDER BY` clause is used to sort records in ascending or descending order."
         }
@@ -1588,7 +1792,6 @@
             "type": "multiple-choice",
             "question": "What is the purpose of HTTP methods in RESTful APIs?",
             "options": [
-                
                 "To specify the data format",
                 "To authenticate users",
                 "To define the type of request being made",
@@ -1601,7 +1804,6 @@
             "type": "multiple-choice",
             "question": "What is the purpose of the `GET` method in RESTful APIs?",
             "options": [
-                
                 "To create new resources on the server",
                 "To update existing resources on the server",
                 "To delete resources from the server",
@@ -1694,76 +1896,327 @@
             "correctAnswer": "To indicate the success or failure of a request",
             "explanation": "`Status Codes` are used to indicate the success or failure of a request in RESTful APIs."
         },
-
         {
             "type": "true-or-false",
             "question": "REST stands for Representational State Transfer.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "REST stands for Representational State Transfer, an architectural style for designing networked applications."
         },
         {
             "type": "true-or-false",
             "question": "REST APIs typically use HTTP methods such as GET, POST, PUT, and DELETE.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "RESTful APIs use standard HTTP methods to perform CRUD operations: GET for read, POST for create, PUT for update, and DELETE for delete."
-          },
-          {
+        },
+        {
             "type": "true-or-false",
             "question": "A REST API must always return data in XML format.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "REST APIs can return data in various formats, such as JSON, XML, or even plain text. JSON is the most commonly used."
-          },
-          {
+        },
+        {
             "type": "true-or-false",
             "question": "In RESTful services, each URL should represent a resource.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "REST principles dictate that each resource should be uniquely addressable via a URI."
-          },
-          {
+        },
+        {
             "type": "true-or-false",
             "question": "RESTful APIs are stateful by design.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "RESTful APIs are stateless, meaning each request from a client must contain all the information needed to process the request."
-          },
-          {
+        },
+        {
             "type": "true-or-false",
             "question": "The HTTP status code 201 is used when a resource is successfully created.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "201 Created is the correct response status code when a new resource is successfully created on the server."
-          },
-          {
+        },
+        {
             "type": "true-or-false",
             "question": "PUT is used to delete a resource in a RESTful API.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "DELETE is used to remove a resource, while PUT is typically used to update or replace a resource."
-          },
-          {
+        },
+        {
             "type": "true-or-false",
             "question": "RESTful APIs should support multiple operations in a single request.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "False",
             "explanation": "RESTful APIs are designed around single-resource manipulation per request to maintain simplicity and clarity."
-          },
-          {
+        },
+        {
             "type": "true-or-false",
             "question": "The base URL in a REST API should indicate the resource hierarchy.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "A RESTful API should have clean, hierarchical URLs that reflect the structure of the resources."
-          },
-          {
+        },
+        {
             "type": "true-or-false",
             "question": "RESTful APIs can be used over protocols other than HTTP.",
-            "options": ["True", "False"],
+            "options": [
+                "True",
+                "False"
+            ],
             "correctAnswer": "True",
             "explanation": "Although HTTP is the most common protocol for REST, in theory REST can be implemented over other protocols like HTTPS or even FTP."
-          }
+        }
+    ],
+    "JWT-Auth": [
+        {
+            "type": "multiple-choice",
+            "question": "What does JWT stand for?",
+            "options": [
+                "JavaScript Web Token",
+                "JSON Web Token",
+                "Java Web Token",
+                "None of the above"
+            ],
+            "correctAnswer": "JSON Web Token",
+            "explanation": "JWT stands for JSON Web Token, a compact and self-contained way for securely transmitting information between parties."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "What are the three parts of a JWT?",
+            "options": [
+                "Header, Body, Footer",
+                "Header, Data, Signature",
+                "Header, Payload, Body",
+                "Header, Payload, Signature"
+            ],
+            "correctAnswer": "Header, Payload, Signature",
+            "explanation": "A JWT consists of three parts: Header, Payload, and Signature."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`Header` in a JWT contains what information?",
+            "options": [
+                "The algorithm used for signing the token",
+                "The expiration time of the token",
+                "The user ID associated with the token",
+                "None of the above"
+            ],
+            "correctAnswer": "The algorithm used for signing the token",
+            "explanation": "`Header` contains metadata about the token, including the signing algorithm used."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`Payload` in a JWT contains what information?",
+            "options": [
+                "The algorithm used for signing the token",
+                "The claims or statements about an entity (typically, the user) and additional data",
+                "The expiration time of the token",
+                "None of the above"
+            ],
+            "correctAnswer": "The claims or statements about an entity (typically, the user) and additional data",
+            "explanation": "`Payload` contains claims or statements about an entity (typically, the user) and additional data."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`Signature` in a JWT is used for what purpose?",
+            "options": [
+                "To encrypt the token",
+                "To decode the token",
+                "To verify the integrity of the token",
+                "None of the above"
+            ],
+            "correctAnswer": "To verify the integrity of the token",
+            "explanation": "`Signature` is used to verify that the sender of the JWT is who it says it is and to ensure that the message wasn't changed along the way."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`HS256` is an example of what?",
+            "options": [
+                "A JWT algorithm",
+                "A JWT claim",
+                "A JWT header",
+                "None of the above"
+            ],
+            "correctAnswer": "A JWT algorithm",
+            "explanation": "`HS256` is a signing algorithm used in JWTs, specifically HMAC with SHA-256."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`RS256` is an example of what?",
+            "options": [
+                "A JWT claim",
+                "A JWT header",
+                "A JWT algorithm",
+                "None of the above"
+            ],
+            "correctAnswer": "A JWT algorithm",
+            "explanation": "`RS256` is a signing algorithm used in JWTs, specifically RSA with SHA-256."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`exp` claim in a JWT is used for what purpose?",
+            "options": [
+                "To specify the expiration time of the token",
+                "To specify the issuer of the token",
+                "To specify the audience of the token",
+                "None of the above"
+            ],
+            "correctAnswer": "To specify the expiration time of the token",
+            "explanation": "`exp` claim is used to specify the expiration time of the token."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`iss` claim in a JWT is used for what purpose?",
+            "options": [
+                "To specify the expiration time of the token",
+                "To specify the issuer of the token",
+                "To specify the audience of the token",
+                "None of the above"
+            ],
+            "correctAnswer": "To specify the issuer of the token",
+            "explanation": "`iss` claim is used to specify the issuer of the token."
+        },
+        {
+            "type": "multiple-choice",
+            "question": "`aud` claim in a JWT is used for what purpose?",
+            "options": [
+                "To specify the expiration time of the token",
+                "To specify the issuer of the token",
+                "To specify the audience of the token",
+                "None of the above"
+            ],
+            "correctAnswer": "To specify the audience of the token",
+            "explanation": "`aud` claim is used to specify the audience of the token."
+        },
+        {
+            "type": "true-or-false",
+            "question": "A JWT can be tampered with if someone knows the secret key.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "True",
+            "explanation": "If an attacker knows the secret key used to sign a JWT, they can modify the payload and re-sign it."
+        },
+        {
+            "type": "true-or-false",
+            "question": "JWTs are ideal for storing sensitive data like passwords.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "False",
+            "explanation": "Sensitive data should not be stored in JWTs since they are not encrypted by default."
+        },
+        {
+            "type": "true-or-false",
+            "question": "The payload of a JWT contains the token’s claims.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "True",
+            "explanation": "The payload stores claims, which are statements about an entity (like a user) and additional metadata."
+        },
+        {
+            "type": "true-or-false",
+            "question": "A JWT’s header includes information about the token’s algorithm and type.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "True",
+            "explanation": "The header typically contains the type of the token (JWT) and the algorithm used to sign it."
+        },
+        {
+            "type": "true-or-false",
+            "question": "JWTs are stored in localStorage or sessionStorage on the client-side.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "True",
+            "explanation": "JWTs are commonly stored in localStorage or sessionStorage, but care must be taken to prevent XSS attacks."
+        },
+        {
+            "type": "true-or-false",
+            "question": "JWTs must be manually decoded to be validated.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "False",
+            "explanation": "JWT libraries handle decoding and validation automatically, verifying the signature and claims."
+        },
+        {
+            "type": "true-or-false",
+            "question": "A JWT can contain custom claims like `role` or `permissions`.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "True",
+            "explanation": "JWTs can include custom claims, such as `role`, `permissions`, or any other useful information."
+        },
+        {
+            "type": "true-or-false",
+            "question": "A JWT token that has expired can still be used until it's revoked.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "False",
+            "explanation": "Once a JWT expires based on the `exp` claim, it should not be accepted even if not manually revoked."
+        },
+        {
+            "type": "true-or-false",
+            "question": "JWTs are commonly used in stateless authentication systems.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "True",
+            "explanation": "JWTs are ideal for stateless authentication as they carry all necessary information within the token."
+        },
+        {
+            "type": "true-or-false",
+            "question": "You can change the payload of a JWT without invalidating the signature.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correctAnswer": "False",
+            "explanation": "Changing the payload will result in a different signature; the original signature will no longer match."
+        }
     ]
 }

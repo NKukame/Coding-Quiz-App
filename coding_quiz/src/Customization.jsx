@@ -66,6 +66,7 @@ function Customization() {
                     <option value="NodeJS">Node.js</option>
                     <option value="PostgreSQL">PostgreSQL</option>
                     <option value="Restful-API">RESTful APIs</option>
+                    <option value="JWT-Auth">JSON Web Token (JWT) Authentication</option>
                   </select>
 
                   {/* Question Type */}
