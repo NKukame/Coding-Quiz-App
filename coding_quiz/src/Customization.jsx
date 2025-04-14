@@ -67,6 +67,7 @@ function Customization() {
                     <option value="PostgreSQL">PostgreSQL</option>
                     <option value="Restful-API">RESTful APIs</option>
                     <option value="JWT-Auth">JSON Web Token (JWT) Authentication</option>
+                    <option value="Redis">Redis</option>
                   </select>
 
                   {/* Question Type */}

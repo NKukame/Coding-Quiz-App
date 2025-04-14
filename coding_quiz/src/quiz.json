@@ -2218,5 +2218,153 @@
             "correctAnswer": "False",
             "explanation": "Changing the payload will result in a different signature; the original signature will no longer match."
         }
+    ],
+
+    "Redis": [
+        {
+            "type": "multiple-choice",
+            "question": "What type of database is Redis?",
+            "options": ["Relational", "Document", "Key-Value", "Graph"],
+            "correctAnswer": "Key-Value",
+            "explanation": "Redis is an in-memory key-value store, often used for caching and real-time applications."
+          },
+          {
+            "type": "multiple-choice",
+            "question": "Which data structure is NOT natively supported by Redis?",
+            "options": ["Strings", "Lists", "Graphs", "Sets"],
+            "correctAnswer": "Graphs",
+            "explanation": "Redis supports strings, lists, sets, hashes, and more, but not graph structures natively."
+          },
+          {
+            "type": "multiple-choice",
+            "question": "What does the `EXPIRE` command in Redis do?",
+            "options": ["Deletes a key immediately", "Sets a timeout on a key", "Renames a key", "Copies a key"],
+            "correctAnswer": "Sets a timeout on a key",
+            "explanation": "`EXPIRE` sets a time-to-live in seconds on a key, after which it will be automatically deleted."
+          },
+          {
+            "type": "multiple-choice",
+            "question": "Which command is used to store a value in Redis?",
+            "options": ["PUT", "INSERT", "SET", "SAVE"],
+            "correctAnswer": "SET",
+            "explanation": "`SET` is the basic command used to assign a value to a key in Redis."
+          },
+          {
+            "type": "multiple-choice",
+            "question": "What is the default port Redis runs on?",
+            "options": ["3306", "27017", "6379", "8080"],
+            "correctAnswer": "6379",
+            "explanation": "Redis runs on port 6379 by default."
+          },
+          {
+            "type": "multiple-choice",
+            "question": "Which Redis command is used to increment a key’s integer value?",
+            "options": ["ADD", "INCR", "APPEND", "UPDATE"],
+            "correctAnswer": "INCR",
+            "explanation": "`INCR` increases the value of a key by one."
+          },
+          {
+            "type": "multiple-choice",
+            "question": "What does the `LRANGE` command do?",
+            "options": [
+              "Removes a range of elements from a list",
+              "Returns a range of elements from a list",
+              "Sorts a list by range",
+              "Replaces a list with a range"
+            ],
+            "correctAnswer": "Returns a range of elements from a list",
+            "explanation": "`LRANGE` retrieves a subset of elements from a Redis list."
+          },
+          {
+            "type": "multiple-choice",
+            "question": "What is a use case for Redis Pub/Sub?",
+            "options": ["Storing documents", "Publishing and subscribing to messages", "Indexing data", "Running background jobs"],
+            "correctAnswer": "Publishing and subscribing to messages",
+            "explanation": "Redis Pub/Sub allows real-time messaging through publish and subscribe channels."
+          },
+          {
+            "type": "multiple-choice",
+            "question": "Which command is used to remove all keys from the current Redis database?",
+            "options": ["DELETE", "CLEAR", "REMOVEALL", "FLUSHDB"],
+            "correctAnswer": "FLUSHDB",
+            "explanation": "`FLUSHDB` clears all keys from the current Redis database."
+          },
+          {
+            "type": "multiple-choice",
+            "question": "Which Redis data structure is best suited for counting unique visitors?",
+            "options": ["List", "Set", "Hash", "Stream"],
+            "correctAnswer": "Set",
+            "explanation": "Sets store unique values, making them ideal for tracking unique visitors."
+          },
+          {
+            "type": "true-or-false",
+            "question": "Redis is an in-memory data store.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "Redis stores data in memory for fast access."
+          },
+          {
+            "type": "true-or-false",
+            "question": "Redis only supports string values.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Redis supports various data types including strings, hashes, lists, sets, and more."
+          },
+          {
+            "type": "true-or-false",
+            "question": "Redis can be used as a cache and a message broker.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "Redis is often used both as a caching layer and for pub/sub messaging."
+          },
+          {
+            "type": "true-or-false",
+            "question": "Redis supports replication and clustering.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "Redis supports master-slave replication and cluster modes for scalability and reliability."
+          },
+          {
+            "type": "true-or-false",
+            "question": "Redis automatically persists all data to disk after every command.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Persistence in Redis is configurable and not automatic after every command unless explicitly set."
+          },
+          {
+            "type": "true-or-false",
+            "question": "You can use Redis without installing any additional software.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "Redis is self-contained and can be run after downloading and installing the binary."
+          },
+          {
+            "type": "true-or-false",
+            "question": "The `DEL` command deletes multiple keys at once.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "`DEL` can be used to delete one or more keys."
+          },
+          {
+            "type": "true-or-false",
+            "question": "Redis Streams are useful for real-time data pipelines.",
+            "options": ["True", "False"],
+            "correctAnswer": "True",
+            "explanation": "Streams in Redis are designed for event-driven or real-time use cases."
+          },
+          {
+            "type": "true-or-false",
+            "question": "Redis commands are case-sensitive.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Redis commands are case-insensitive (e.g., `SET`, `set`, and `SeT` are all valid)."
+          },
+          {
+            "type": "true-or-false",
+            "question": "Redis is suitable for long-term persistent storage of large datasets.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Redis is optimized for speed and is better suited for caching and temporary storage rather than long-term large data storage."
+          }
     ]
 }
