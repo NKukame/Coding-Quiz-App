@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 import { useLocation, useNavigate } from "react-router";
 import { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import TimeLoader from "./components/TimeLoader";
@@ -74,6 +76,12 @@ function Quiz() {
   };
 
   const handleNext = () => {
+
+    if (!selectedOption) {
+      toast.warning("Please Select An Option Before Proceeding.");
+      return;
+    }
+
     const isLastQuestion = currentQuestionIndex === questions.length - 1;
 
     if (!isLastQuestion) {
@@ -137,6 +145,7 @@ function Quiz() {
                         value={option}
                         checked={selectedOption === option}
                         onChange={() => handleOptionChange(option)}
+                        disabled={isAnswered}
                       />
                       <span className="custom-radio-checkmark"></span>
                       {option}
@@ -159,7 +168,8 @@ function Quiz() {
           </div>
 
           <div className="quiz-footer">
-            <button className="animated-button button-1" onClick={handlePrev} disabled={currentQuestionIndex === 0}>
+          {/* disabled={currentQuestionIndex === 0} */}
+            <button className="animated-button button-1" onClick={handlePrev} disabled>
                     <svg
                       viewBox="0 0 24 24"
                       className="arr-1 btn1-arr1"
@@ -188,7 +198,7 @@ function Quiz() {
 
             </div>
 
-            <button className="animated-button" onClick={handleNext}>
+            <button className="animated-button" onClick={handleNext} >
                     <svg
                       viewBox="0 0 24 24"
                       className="arr-2"
@@ -210,6 +220,9 @@ function Quiz() {
 
         </div>
       </div>
+
+      <ToastContainer position="top-center" autoClose={2000} />
+
 
       {showResult && (
           <div className="modal-backdrop">
